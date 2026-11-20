@@ -15,6 +15,8 @@
     <aura:attribute name="previewRows"   type="List"    default="[]" />
     <aura:attribute name="isLoading"     type="Boolean" default="true" />
     <aura:attribute name="projectsExist" type="Boolean" default="false" />
+    <!-- Flag to detect Chakr Marjak PO Verification - Added by Vanshika 20-Nov-2026 -->
+    <aura:attribute name="isChakrMarjak" type="Boolean" default="false" />
 
     <!-- Main Wrapper -->
     <div class="customModalWrapper slds-p-around_medium">
@@ -60,10 +62,18 @@
                                     <td>{!row.kvaRating}</td>
                                     <td>{!row.panelType}</td>
                                     <td>
-                                        <lightning:select name="recordType" value="{!row.recordType}">
-                                            <option value="Inhouse">Inhouse</option>
-                                            <option value="Outsource">Outsource</option>
-                                        </lightning:select>
+                                        <!-- For Chakr Marjak PO Verification, only Chakr Marjak is allowed - By Vanshika 20-Nov-2026 -->
+                                        <aura:if isTrue="{!v.isChakrMarjak}">
+                                            <lightning:select name="recordType" value="{!row.recordType}">
+                                                <option value="Chakr_Marjak">Chakr Marjak</option>
+                                            </lightning:select>
+                                            <aura:set attribute="else">
+                                                <lightning:select name="recordType" value="{!row.recordType}">
+                                                    <option value="Inhouse">Inhouse</option>
+                                                    <option value="Outsource">Outsource</option>
+                                                </lightning:select>
+                                            </aura:set>
+                                        </aura:if>
                                     </td>
                                 </tr>
                             </aura:iteration>

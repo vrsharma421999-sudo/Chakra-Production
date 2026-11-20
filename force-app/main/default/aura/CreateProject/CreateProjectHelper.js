@@ -6,9 +6,19 @@
             component.set('v.isLoading', false);
             if (response.getState() === 'SUCCESS') {
                 var rows = response.getReturnValue();
-                // Set default recordType = Inhouse on each row
+                // Check if Chakr Marjak PO Verification - Added by Vanshika 20-Nov-2026
+                var isChakr = false;
+                if (rows && rows.length > 0 && rows[0].isChakrMarjak) {
+                    isChakr = true;
+                }
+                component.set('v.isChakrMarjak', isChakr);
                 rows.forEach(function (row) {
-                    row.recordType = 'Inhouse';
+                    // Lock to Chakr_Marjak if Chakr Marjak, otherwise default to Inhouse - By Vanshika 20-Nov-2026
+                    if (isChakr) {
+                        row.recordType = 'Chakr_Marjak';
+                    } else if (!row.recordType) {
+                        row.recordType = 'Inhouse';
+                    }
                 });
                 component.set('v.previewRows', rows);
             } else {
