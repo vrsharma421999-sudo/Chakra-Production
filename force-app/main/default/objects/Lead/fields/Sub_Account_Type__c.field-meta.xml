@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Account_Type__c</fullName>
+    <label>Sub-Account Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PSU</fullName>
+                <default>false</default>
+                <label>PSU</label>
+            </value>
+            <value>
+                <fullName>Defence</fullName>
+                <default>false</default>
+                <label>Defence</label>
+            </value>
+            <value>
+                <fullName>PWD</fullName>
+                <default>false</default>
+                <label>PWD</label>
+            </value>
+            <value>
+                <fullName>CPWD</fullName>
+                <default>false</default>
+                <label>CPWD</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>DIrect</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>PSU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Defence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>PWD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>CPWD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distributors</controllingFieldValue>
+            <valueName>Channel Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distributors</controllingFieldValue>
+            <valueName>OEM</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Assigned_To__c</fullName>
+    <label>Lead Assigned To</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mudit</fullName>
+                <default>false</default>
+                <label>Mudit</label>
+            </value>
+            <value>
+                <fullName>Akhilendra Tiwari</fullName>
+                <default>false</default>
+                <label>Akhilendra Tiwari</label>
+            </value>
+            <value>
+                <fullName>Arun</fullName>
+                <default>false</default>
+                <label>Arun</label>
+            </value>
+            <value>
+                <fullName>Pankaj</fullName>
+                <default>false</default>
+                <label>Pankaj</label>
+            </value>
+            <value>
+                <fullName>Harish</fullName>
+                <default>false</default>
+                <label>Harish</label>
+            </value>
+            <value>
+                <fullName>Kuldeep</fullName>
+                <default>false</default>
+                <label>Kuldeep</label>
+            </value>
+            <value>
+                <fullName>Gaurav</fullName>
+                <default>false</default>
+                <label>Gaurav</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

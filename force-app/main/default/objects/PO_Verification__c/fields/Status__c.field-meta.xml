@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>PO Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TC in Process</fullName>
+                <default>true</default>
+                <label>TC in Process</label>
+            </value>
+            <value>
+                <fullName>Send to PM Head</fullName>
+                <default>false</default>
+                <label>Assign PM</label>
+            </value>
+            <value>
+                <fullName>Send for Approval</fullName>
+                <default>false</default>
+                <label>Send for Approval</label>
+            </value>
+            <value>
+                <fullName>PO Approved</fullName>
+                <default>false</default>
+                <label>PO Approved</label>
+            </value>
+            <value>
+                <fullName>FC in Progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Finance Checklist in Process</label>
+            </value>
+            <value>
+                <fullName>Sent for Revision</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sent for Revision</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

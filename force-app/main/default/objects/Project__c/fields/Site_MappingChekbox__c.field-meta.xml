@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_MappingChekbox__c</fullName>
+    <label>Site Mapping Status?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>DG is not available at the Site</fullName>
+                <default>false</default>
+                <label>DG is not available at the Site</label>
+            </value>
+            <value>
+                <fullName>Hold</fullName>
+                <default>false</default>
+                <label>Hold</label>
+            </value>
+            <value>
+                <fullName>Hold due to DG shifted by the Client</fullName>
+                <default>false</default>
+                <label>Hold due to DG shifted by the Client</label>
+            </value>
+            <value>
+                <fullName>Hold due to Insufficient Balance in MMT</fullName>
+                <default>false</default>
+                <label>Hold due to Insufficient Balance in MMT</label>
+            </value>
+            <value>
+                <fullName>Hold from Client End</fullName>
+                <default>false</default>
+                <label>Hold from Client End</label>
+            </value>
+            <value>
+                <fullName>Hold from Finance</fullName>
+                <default>false</default>
+                <label>Hold from Finance</label>
+            </value>
+            <value>
+                <fullName>Hold from PM</fullName>
+                <default>false</default>
+                <label>Hold from PM</label>
+            </value>
+            <value>
+                <fullName>Hold from Sales due to Payment</fullName>
+                <default>false</default>
+                <label>Hold from Sales due to Payment</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>OC mail generated, pending from the Design end</fullName>
+                <default>false</default>
+                <label>OC mail generated, pending from the Design end</label>
+            </value>
+            <value>
+                <fullName>Ongoing</fullName>
+                <default>false</default>
+                <label>Ongoing</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Planned</fullName>
+                <default>false</default>
+                <label>Planned</label>
+            </value>
+            <value>
+                <fullName>Remapping required</fullName>
+                <default>false</default>
+                <label>Remapping required</label>
+            </value>
+            <value>
+                <fullName>Site Mapping completed but OC mail not generated</fullName>
+                <default>false</default>
+                <label>Site Mapping completed but OC mail not generated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

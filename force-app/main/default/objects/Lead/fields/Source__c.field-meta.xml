@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <label>Lead Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Channel__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Social Media Marketing</fullName>
+                <default>false</default>
+                <label>Social Media Marketing</label>
+            </value>
+            <value>
+                <fullName>SEO</fullName>
+                <default>false</default>
+                <label>SEO</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>Content</fullName>
+                <default>false</default>
+                <label>Content</label>
+            </value>
+            <value>
+                <fullName>Mobile Marketing</fullName>
+                <default>false</default>
+                <label>Mobile Marketing</label>
+            </value>
+            <value>
+                <fullName>Online Market Places</fullName>
+                <default>false</default>
+                <label>Online Market Places</label>
+            </value>
+            <value>
+                <fullName>OOH</fullName>
+                <default>false</default>
+                <label>OOH</label>
+            </value>
+            <value>
+                <fullName>Print Ads</fullName>
+                <default>false</default>
+                <label>Print Ads</label>
+            </value>
+            <value>
+                <fullName>Broadcast</fullName>
+                <default>false</default>
+                <label>Broadcast</label>
+            </value>
+            <value>
+                <fullName>Direct Selling</fullName>
+                <default>false</default>
+                <label>Direct Selling</label>
+            </value>
+            <value>
+                <fullName>Flyers/Brouchers</fullName>
+                <default>false</default>
+                <label>Flyers/Brouchers</label>
+            </value>
+            <value>
+                <fullName>Cold Calling</fullName>
+                <default>false</default>
+                <label>Cold Calling</label>
+            </value>
+            <value>
+                <fullName>Tele marketing/Directory</fullName>
+                <default>false</default>
+                <label>Tele marketing/Directory</label>
+            </value>
+            <value>
+                <fullName>Sponsorships</fullName>
+                <default>false</default>
+                <label>Sponsorships</label>
+            </value>
+            <value>
+                <fullName>Brand Partnerships</fullName>
+                <default>false</default>
+                <label>Brand Partnerships</label>
+            </value>
+            <value>
+                <fullName>Media Coverage</fullName>
+                <default>false</default>
+                <label>Media Coverage</label>
+            </value>
+            <value>
+                <fullName>Award Ceremony</fullName>
+                <default>false</default>
+                <label>Award Ceremony</label>
+            </value>
+            <value>
+                <fullName>Public Appearance</fullName>
+                <default>false</default>
+                <label>Public Appearance</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Investors</fullName>
+                <default>false</default>
+                <label>Investors</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>India Mart</fullName>
+                <default>false</default>
+                <label>India Mart</label>
+            </value>
+            <value>
+                <fullName>Inbound on Chakr Offical Number</fullName>
+                <default>false</default>
+                <label>Inbound on Chakr Offical Number</label>
+            </value>
+            <value>
+                <fullName>Zia</fullName>
+                <default>false</default>
+                <label>Zia</label>
+            </value>
+            <value>
+                <fullName>Directory</fullName>
+                <default>false</default>
+                <label>Directory</label>
+            </value>
+            <value>
+                <fullName>MPCB_Vivin</fullName>
+                <default>false</default>
+                <label>MPCB_Vivin</label>
+            </value>
+            <value>
+                <fullName>Personal Previous Sheet</fullName>
+                <default>false</default>
+                <label>Personal Previous Sheet</label>
+            </value>
+            <value>
+                <fullName>UBS forum_Marketing</fullName>
+                <default>false</default>
+                <label>UBS forum_Marketing</label>
+            </value>
+            <value>
+                <fullName>KS</fullName>
+                <default>false</default>
+                <label>KS</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Mohsin Ahamed</fullName>
+                <default>false</default>
+                <label>Mohsin Ahamed</label>
+            </value>
+            <value>
+                <fullName>CPP_ TN</fullName>
+                <default>false</default>
+                <label>CPP_ TN</label>
+            </value>
+            <value>
+                <fullName>Sourcing Data</fullName>
+                <default>false</default>
+                <label>Sourcing Data</label>
+            </value>
+            <value>
+                <fullName>Gireesh_CA</fullName>
+                <default>false</default>
+                <label>Gireesh_CA</label>
+            </value>
+            <value>
+                <fullName>CA_Himanshu</fullName>
+                <default>false</default>
+                <label>CA_Himanshu</label>
+            </value>
+            <value>
+                <fullName>Bharat Mandapam</fullName>
+                <default>false</default>
+                <label>Bharat Mandapam</label>
+            </value>
+            <value>
+                <fullName>India Expo Mart, Gr Noida</fullName>
+                <default>false</default>
+                <label>India Expo Mart, Gr Noida</label>
+            </value>
+            <value>
+                <fullName>Visiting Card Bharti_CA</fullName>
+                <default>false</default>
+                <label>Visiting Card Bharti_CA</label>
+            </value>
+            <value>
+                <fullName>Mohit Singhvi_CA</fullName>
+                <default>false</default>
+                <label>Mohit Singhvi_CA</label>
+            </value>
+            <value>
+                <fullName>Cummins</fullName>
+                <default>false</default>
+                <label>Cummins</label>
+            </value>
+            <value>
+                <fullName>Corporate Affairs</fullName>
+                <default>false</default>
+                <label>Corporate Affairs</label>
+            </value>
+            <value>
+                <fullName>Hospitals_CA</fullName>
+                <default>false</default>
+                <label>Hospitals_CA</label>
+            </value>
+            <value>
+                <fullName>Marketing_JH</fullName>
+                <default>false</default>
+                <label>Marketing_JH</label>
+            </value>
+            <value>
+                <fullName>Industry Scenario_Marketing</fullName>
+                <default>false</default>
+                <label>Industry Scenario_Marketing</label>
+            </value>
+            <value>
+                <fullName>Aero India 2025</fullName>
+                <default>false</default>
+                <label>Aero India 2025</label>
+            </value>
+            <value>
+                <fullName>Adityapur_JH</fullName>
+                <default>false</default>
+                <label>Adityapur_JH</label>
+            </value>
+            <value>
+                <fullName>Pune Data Mined</fullName>
+                <default>false</default>
+                <label>Pune Data Mined</label>
+            </value>
+            <value>
+                <fullName>Delhi Sample</fullName>
+                <default>false</default>
+                <label>Delhi Sample</label>
+            </value>
+            <value>
+                <fullName>Nasscom GSC Summit Award 2025</fullName>
+                <default>false</default>
+                <label>Nasscom GSC Summit Award 2025</label>
+            </value>
+            <value>
+                <fullName>Gurgaon-Pune Data Points</fullName>
+                <default>false</default>
+                <label>Gurgaon-Pune Data Points</label>
+            </value>
+            <value>
+                <fullName>Karnataka Sample Data</fullName>
+                <default>false</default>
+                <label>Karnataka Sample Data</label>
+            </value>
+            <value>
+                <fullName>Copy of Kumar Prabhakar leads</fullName>
+                <default>false</default>
+                <label>Copy of Kumar Prabhakar leads</label>
+            </value>
+            <value>
+                <fullName>DPCB_Himanshu_CA</fullName>
+                <default>false</default>
+                <label>DPCB_Himanshu_CA</label>
+            </value>
+            <value>
+                <fullName>CII</fullName>
+                <default>false</default>
+                <label>CII</label>
+            </value>
+            <value>
+                <fullName>Tele marketing/ Directory</fullName>
+                <default>false</default>
+                <label>Tele marketing/ Directory</label>
+            </value>
+            <value>
+                <fullName>MPCB</fullName>
+                <default>false</default>
+                <label>MPCB</label>
+            </value>
+            <value>
+                <fullName>ESG</fullName>
+                <default>false</default>
+                <label>ESG</label>
+            </value>
+            <value>
+                <fullName>Himanshu-CA 2/Jhajjar</fullName>
+                <default>false</default>
+                <label>Himanshu-CA 2/Jhajjar</label>
+            </value>
+            <value>
+                <fullName>Climate Tech Convening_Marketing_Alisha</fullName>
+                <default>false</default>
+                <label>Climate Tech Convening_Marketing_Alisha</label>
+            </value>
+            <value>
+                <fullName>IWMA_Marketing</fullName>
+                <default>false</default>
+                <label>IWMA_Marketing</label>
+            </value>
+            <value>
+                <fullName>SME_ET Marketing</fullName>
+                <default>false</default>
+                <label>SME_ET Marketing</label>
+            </value>
+            <value>
+                <fullName>LOP Pune</fullName>
+                <default>false</default>
+                <label>LOP Pune</label>
+            </value>
+            <value>
+                <fullName>Inquiry List</fullName>
+                <default>false</default>
+                <label>Inquiry List</label>
+            </value>
+            <value>
+                <fullName>Prime Faridabad</fullName>
+                <default>false</default>
+                <label>Prime Faridabad</label>
+            </value>
+            <value>
+                <fullName>Corporate Sample</fullName>
+                <default>false</default>
+                <label>Corporate Sample</label>
+            </value>
+            <value>
+                <fullName>Marketing_ BSR_Ghaziabad</fullName>
+                <default>false</default>
+                <label>Marketing_ BSR_Ghaziabad</label>
+            </value>
+            <value>
+                <fullName>Factory PAN</fullName>
+                <default>false</default>
+                <label>Factory PAN</label>
+            </value>
+            <value>
+                <fullName>Tele marketing/ Directory-1</fullName>
+                <default>false</default>
+                <label>Tele marketing/ Directory-1</label>
+            </value>
+            <value>
+                <fullName>Hotel Restaurant Sample</fullName>
+                <default>false</default>
+                <label>Hotel Restaurant Sample</label>
+            </value>
+            <value>
+                <fullName>Fundoo Data</fullName>
+                <default>false</default>
+                <label>Fundoo Data</label>
+            </value>
+            <value>
+                <fullName>List of industry for SUP_Bharti</fullName>
+                <default>false</default>
+                <label>List of industry for SUP_Bharti</label>
+            </value>
+            <value>
+                <fullName>Federation</fullName>
+                <default>false</default>
+                <label>Federation</label>
+            </value>
+            <value>
+                <fullName>All India Hospital Sample</fullName>
+                <default>false</default>
+                <label>All India Hospital Sample</label>
+            </value>
+            <value>
+                <fullName>Delhi Exibition</fullName>
+                <default>false</default>
+                <label>Delhi Exibition</label>
+            </value>
+            <value>
+                <fullName>Bangalore Sample Data</fullName>
+                <default>false</default>
+                <label>Bangalore Sample Data</label>
+            </value>
+            <value>
+                <fullName>5th Edition sustainability</fullName>
+                <default>false</default>
+                <label>5th Edition sustainability</label>
+            </value>
+            <value>
+                <fullName>Sipcot_Bharti</fullName>
+                <default>false</default>
+                <label>Sipcot_Bharti</label>
+            </value>
+            <value>
+                <fullName>Arab Plast Exhibition Directory</fullName>
+                <default>false</default>
+                <label>Arab Plast Exhibition Directory</label>
+            </value>
+            <value>
+                <fullName>Maha Chambers</fullName>
+                <default>false</default>
+                <label>Maha Chambers</label>
+            </value>
+            <value>
+                <fullName>West-South City sample</fullName>
+                <default>false</default>
+                <label>West-South City sample</label>
+            </value>
+            <value>
+                <fullName>Maha Index</fullName>
+                <default>false</default>
+                <label>Maha Index</label>
+            </value>
+            <value>
+                <fullName>Gireesh CA_KA</fullName>
+                <default>false</default>
+                <label>Gireesh CA_KA</label>
+            </value>
+            <value>
+                <fullName>Bharti_South CA</fullName>
+                <default>false</default>
+                <label>Bharti_South CA</label>
+            </value>
+            <value>
+                <fullName>Corporate MNC</fullName>
+                <default>false</default>
+                <label>Corporate MNC</label>
+            </value>
+            <value>
+                <fullName>Mahad MIDC</fullName>
+                <default>false</default>
+                <label>Mahad MIDC</label>
+            </value>
+            <value>
+                <fullName>Asheesh_PDF data</fullName>
+                <default>false</default>
+                <label>Asheesh_PDF data</label>
+            </value>
+            <value>
+                <fullName>Nasik Industrial Directory</fullName>
+                <default>false</default>
+                <label>Nasik Industrial Directory</label>
+            </value>
+            <value>
+                <fullName>Raju Sales Team</fullName>
+                <default>false</default>
+                <label>Raju Sales Team</label>
+            </value>
+            <value>
+                <fullName>Vatva_DCR_Karan</fullName>
+                <default>false</default>
+                <label>Vatva_DCR_Karan</label>
+            </value>
+            <value>
+                <fullName>Gujarat B2B Sample data</fullName>
+                <default>false</default>
+                <label>Gujarat B2B Sample data</label>
+            </value>
+            <value>
+                <fullName>Lusha_GJ</fullName>
+                <default>false</default>
+                <label>Lusha_GJ</label>
+            </value>
+            <value>
+                <fullName>Lusha_MH</fullName>
+                <default>false</default>
+                <label>Lusha_MH</label>
+            </value>
+            <value>
+                <fullName>BIS Data</fullName>
+                <default>false</default>
+                <label>BIS Data</label>
+            </value>
+            <value>
+                <fullName>Haryana 363_Marketing</fullName>
+                <default>false</default>
+                <label>Haryana 363_Marketing</label>
+            </value>
+            <value>
+                <fullName>CA</fullName>
+                <default>false</default>
+                <label>CA</label>
+            </value>
+            <value>
+                <fullName>Delhi NCR Data</fullName>
+                <default>false</default>
+                <label>Delhi NCR Data</label>
+            </value>
+            <value>
+                <fullName>Delhi Exhibition</fullName>
+                <default>false</default>
+                <label>Delhi Exhibition</label>
+            </value>
+            <value>
+                <fullName>Premium North_Marketing</fullName>
+                <default>false</default>
+                <label>Premium North_Marketing</label>
+            </value>
+            <value>
+                <fullName>Gurugram Solar_Marketing</fullName>
+                <default>false</default>
+                <label>Gurugram Solar_Marketing</label>
+            </value>
+            <value>
+                <fullName>Gireesh Bangalore Data</fullName>
+                <default>false</default>
+                <label>Gireesh Bangalore Data</label>
+            </value>
+            <value>
+                <fullName>Lucknow Solar Company_Marketing</fullName>
+                <default>false</default>
+                <label>Lucknow Solar Company_Marketing</label>
+            </value>
+            <value>
+                <fullName>Inbound Marketing Lead</fullName>
+                <default>false</default>
+                <label>Inbound Marketing Lead</label>
+            </value>
+            <value>
+                <fullName>Pre-Sales Leads</fullName>
+                <default>false</default>
+                <label>Pre-Sales Leads</label>
+            </value>
+            <value>
+                <fullName>Coporate Affairs Leads</fullName>
+                <default>false</default>
+                <label>Corporate Affairs Leads</label>
+            </value>
+            <value>
+                <fullName>Feedback Calling</fullName>
+                <default>false</default>
+                <label>Feedback Calling</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Inbound Lead</controllingFieldValue>
+            <valueName>Inbound Marketing Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound Lead</controllingFieldValue>
+            <valueName>Pre-Sales Leads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inbound Lead</controllingFieldValue>
+            <valueName>Coporate Affairs Leads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital_Marketing</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital_Marketing</controllingFieldValue>
+            <valueName>Social Media Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital_Marketing</controllingFieldValue>
+            <valueName>SEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital_Marketing</controllingFieldValue>
+            <valueName>Website</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital_Marketing</controllingFieldValue>
+            <valueName>Content</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital_Marketing</controllingFieldValue>
+            <valueName>Mobile Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital_Marketing</controllingFieldValue>
+            <valueName>Online Market Places</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre Sales</controllingFieldValue>
+            <valueName>Feedback Calling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>OOH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Print Ads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Broadcast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Direct Selling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Flyers/Brouchers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Cold Calling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Tele marketing/Directory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Sponsorships</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Brand Partnerships</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Marketing</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Publicity</controllingFieldValue>
+            <valueName>Media Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Publicity</controllingFieldValue>
+            <valueName>Award Ceremony</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Publicity</controllingFieldValue>
+            <valueName>Public Appearance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referrals</controllingFieldValue>
+            <valueName>Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referrals</controllingFieldValue>
+            <valueName>Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referrals</controllingFieldValue>
+            <valueName>Investors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referrals</controllingFieldValue>
+            <valueName>Channel Partner</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

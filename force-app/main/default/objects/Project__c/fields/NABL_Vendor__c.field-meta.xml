@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NABL_Vendor__c</fullName>
+    <label>NABL Vendor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assignment Pending</fullName>
+                <default>false</default>
+                <label>Assignment Pending</label>
+            </value>
+            <value>
+                <fullName>SCS Enviro</fullName>
+                <default>false</default>
+                <label>SCS Enviro</label>
+            </value>
+            <value>
+                <fullName>ABS Enviro</fullName>
+                <default>false</default>
+                <label>ABS Enviro</label>
+            </value>
+            <value>
+                <fullName>Newcon Cons</fullName>
+                <default>false</default>
+                <label>Newcon Cons</label>
+            </value>
+            <value>
+                <fullName>ITC</fullName>
+                <default>false</default>
+                <label>ITC</label>
+            </value>
+            <value>
+                <fullName>ABC Techno</fullName>
+                <default>false</default>
+                <label>ABC Techno</label>
+            </value>
+            <value>
+                <fullName>Lotus Enviro</fullName>
+                <default>false</default>
+                <label>Lotus Enviro</label>
+            </value>
+            <value>
+                <fullName>Goldfinch</fullName>
+                <default>false</default>
+                <label>Goldfinch</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

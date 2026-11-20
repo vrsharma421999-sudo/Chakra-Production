@@ -1,0 +1,97 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global"
+                controller="CreateProjectHandler">
+
+    <aura:html tag="style">
+        .slds-modal__container {
+            width: 75vw !important;
+            max-width: 75vw !important;
+        }
+    </aura:html>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!-- Attributes -->
+    <aura:attribute name="previewRows"   type="List"    default="[]" />
+    <aura:attribute name="isLoading"     type="Boolean" default="true" />
+    <aura:attribute name="projectsExist" type="Boolean" default="false" />
+
+    <!-- Main Wrapper -->
+    <div class="customModalWrapper slds-p-around_medium">
+
+        <!-- Spinner -->
+        <aura:if isTrue="{!v.isLoading}">
+            <lightning:spinner alternativeText="Loading" size="medium" />
+        </aura:if>
+
+        <!-- Projects already exist -->
+        <aura:if isTrue="{!and(!v.isLoading, v.projectsExist)}">
+            <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+                <span class="slds-assistive-text">Error</span>
+                <h2>Projects have already been created for this PO Verification. No further action required.</h2>
+            </div>
+        </aura:if>
+
+        <!-- Preview Table -->
+        <aura:if isTrue="{!and(!v.isLoading, !v.projectsExist)}">
+
+            <aura:if isTrue="{!v.previewRows.length > 0}">
+
+                <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                    Projects to be Created ({!v.previewRows.length})
+                </h2>
+
+                <div class="tableWrapper">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col"><div class="slds-truncate">#</div></th>
+                                <th scope="col"><div class="slds-truncate">Project Name</div></th>
+                                <th scope="col"><div class="slds-truncate">KVA Rating</div></th>
+                                <th scope="col"><div class="slds-truncate">Panel Type</div></th>
+                                <th scope="col"><div class="slds-truncate">Type</div></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <aura:iteration items="{!v.previewRows}" var="row" indexVar="idx">
+                                <tr>
+                                    <td>{!idx + 1}</td>
+                                    <td>{!row.projectName}</td>
+                                    <td>{!row.kvaRating}</td>
+                                    <td>{!row.panelType}</td>
+                                    <td>
+                                        <lightning:select name="recordType" value="{!row.recordType}">
+                                            <option value="Inhouse">Inhouse</option>
+                                            <option value="Outsource">Outsource</option>
+                                        </lightning:select>
+                                    </td>
+                                </tr>
+                            </aura:iteration>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Buttons -->
+                <div class="slds-m-top_large slds-text-align_right">
+                    <!--<lightning:button label="Cancel"
+                                      onclick="{!c.handleCancel}"
+                                      class="slds-m-right_small"/>-->
+                    <lightning:button variant="brand"
+                                      label="Create Projects"
+                                      onclick="{!c.handleCreate}" />
+                </div>
+
+            </aura:if>
+
+            <!-- No line items found -->
+            <aura:if isTrue="{!v.previewRows.length == 0}">
+                <p class="slds-text-color_error slds-text-heading_small">
+                    No PO Line Items found to preview projects.
+                </p>
+            </aura:if>
+
+        </aura:if>
+
+    </div>
+
+</aura:component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Business_Type_for_Chakr_Marjak</fullName>
+    <active>true</active>
+    <description>Requires Business Type to be specified when converting a Chakr Marjak lead.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &apos;Chakr_Marjak&apos;,
+    ISBLANK(TEXT(Business_Type__c)),
+    IsConverted = TRUE
+)</errorConditionFormula>
+    <errorDisplayField>Business_Type__c</errorDisplayField>
+    <errorMessage>Business Type is required when converting a Chakr Marjak lead.</errorMessage>
+</ValidationRule>

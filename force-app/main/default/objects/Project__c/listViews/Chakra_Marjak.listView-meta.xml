@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chakra_Marjak</fullName>
+    <columns>NAME</columns>
+    <columns>PO_Line_Item__c</columns>
+    <columns>Project_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Project__c.Chakr_Marjak</value>
+    </filters>
+    <label>Chakra Marjak</label>
+</ListView>

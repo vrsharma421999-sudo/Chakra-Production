@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DFK_ST_Cylinder__c</fullName>
+    <label>DFK ST(Cylinder)</label>
+    <summarizedField>PO_Line_Item__c.DFKSTCylinder__c</summarizedField>
+    <summaryForeignKey>PO_Line_Item__c.PO_Verification__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

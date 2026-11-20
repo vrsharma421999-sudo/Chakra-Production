@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_SiteManager__c</fullName>
+    <inlineHelpText>Name of the person visiting the site for site mapping</inlineHelpText>
+    <label>Name of Site Mapping Engineer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Abhay Pandey</fullName>
+                <default>false</default>
+                <label>Abhay Pandey</label>
+            </value>
+            <value>
+                <fullName>Abhishek Gulani</fullName>
+                <default>false</default>
+                <label>Abhishek Gulani</label>
+            </value>
+            <value>
+                <fullName>Ajay gawande</fullName>
+                <default>false</default>
+                <label>Ajay gawande</label>
+            </value>
+            <value>
+                <fullName>Akshay khapare</fullName>
+                <default>false</default>
+                <label>Akshay khapare</label>
+            </value>
+            <value>
+                <fullName>Anand chavan</fullName>
+                <default>false</default>
+                <label>Anand chavan</label>
+            </value>
+            <value>
+                <fullName>Aniket chandanshive</fullName>
+                <default>false</default>
+                <label>Aniket chandanshive</label>
+            </value>
+            <value>
+                <fullName>Aniket gajghate</fullName>
+                <default>false</default>
+                <label>Aniket gajghate</label>
+            </value>
+            <value>
+                <fullName>Ankur Pandey</fullName>
+                <default>false</default>
+                <label>Ankur Pandey</label>
+            </value>
+            <value>
+                <fullName>Ankush Yadav</fullName>
+                <default>false</default>
+                <label>Ankush Yadav</label>
+            </value>
+            <value>
+                <fullName>Arun Kumar</fullName>
+                <default>false</default>
+                <label>Arun Kumar</label>
+            </value>
+            <value>
+                <fullName>Arun Pathak</fullName>
+                <default>false</default>
+                <label>Arun Pathak</label>
+            </value>
+            <value>
+                <fullName>Ashish Kakran</fullName>
+                <default>false</default>
+                <label>Ashish Kakran</label>
+            </value>
+            <value>
+                <fullName>Ashish Mishra</fullName>
+                <default>false</default>
+                <label>Ashish Mishra</label>
+            </value>
+            <value>
+                <fullName>Ashish Pandey</fullName>
+                <default>false</default>
+                <label>Ashish Pandey</label>
+            </value>
+            <value>
+                <fullName>Bharthi Raja N</fullName>
+                <default>false</default>
+                <label>Bharthi Raja N</label>
+            </value>
+            <value>
+                <fullName>Chandralok Singh</fullName>
+                <default>false</default>
+                <label>Chandralok Singh</label>
+            </value>
+            <value>
+                <fullName>Mr. Dattatray Sutar</fullName>
+                <default>false</default>
+                <label>Dattatray Sutar</label>
+            </value>
+            <value>
+                <fullName>Devanand Kalsait</fullName>
+                <default>false</default>
+                <label>Devanand Kalsait</label>
+            </value>
+            <value>
+                <fullName>Divank Choudhary</fullName>
+                <default>false</default>
+                <label>Divank Choudhary</label>
+            </value>
+            <value>
+                <fullName>Fahim</fullName>
+                <default>false</default>
+                <label>Fahim</label>
+            </value>
+            <value>
+                <fullName>Ganesh babar</fullName>
+                <default>false</default>
+                <label>Ganesh babar</label>
+            </value>
+            <value>
+                <fullName>Ganesh Gore.</fullName>
+                <default>false</default>
+                <label>Ganesh Gore.</label>
+            </value>
+            <value>
+                <fullName>Ganesh kadam</fullName>
+                <default>false</default>
+                <label>Ganesh kadam</label>
+            </value>
+            <value>
+                <fullName>Gaurang raut</fullName>
+                <default>false</default>
+                <label>Gaurang raut</label>
+            </value>
+            <value>
+                <fullName>Gaurav gawali</fullName>
+                <default>false</default>
+                <label>Gaurav gawali</label>
+            </value>
+            <value>
+                <fullName>Gautam damahe</fullName>
+                <default>false</default>
+                <label>Gautam damahe</label>
+            </value>
+            <value>
+                <fullName>Harshal patil</fullName>
+                <default>false</default>
+                <label>Harshal patil</label>
+            </value>
+            <value>
+                <fullName>Jayant bavskar</fullName>
+                <default>false</default>
+                <label>Jayant bavskar</label>
+            </value>
+            <value>
+                <fullName>Jay Kishan</fullName>
+                <default>false</default>
+                <label>Jay Kishan</label>
+            </value>
+            <value>
+                <fullName>Jeetu Rathore</fullName>
+                <default>false</default>
+                <label>Jeetu Rathore</label>
+            </value>
+            <value>
+                <fullName>Mihir</fullName>
+                <default>false</default>
+                <label>Mihir</label>
+            </value>
+            <value>
+                <fullName>Mukesh Dive</fullName>
+                <default>false</default>
+                <label>Mukesh Dive</label>
+            </value>
+            <value>
+                <fullName>Nadeem</fullName>
+                <default>false</default>
+                <label>Nadeem</label>
+            </value>
+            <value>
+                <fullName>Namshad</fullName>
+                <default>false</default>
+                <label>Namshad</label>
+            </value>
+            <value>
+                <fullName>Neeraj Kumar</fullName>
+                <default>false</default>
+                <label>Neeraj Kumar</label>
+            </value>
+            <value>
+                <fullName>Pankaj gawai</fullName>
+                <default>false</default>
+                <label>Pankaj gawai</label>
+            </value>
+            <value>
+                <fullName>Pavan mahajan</fullName>
+                <default>false</default>
+                <label>Pavan mahajan</label>
+            </value>
+            <value>
+                <fullName>Pavan patil</fullName>
+                <default>false</default>
+                <label>Pavan patil</label>
+            </value>
+            <value>
+                <fullName>Pramod Kumar</fullName>
+                <default>false</default>
+                <label>Pramod Kumar</label>
+            </value>
+            <value>
+                <fullName>Pranit Gore</fullName>
+                <default>false</default>
+                <label>Pranit Gore</label>
+            </value>
+            <value>
+                <fullName>Prasad Akolakar</fullName>
+                <default>false</default>
+                <label>Prasad Akolakar</label>
+            </value>
+            <value>
+                <fullName>Prasad patil</fullName>
+                <default>false</default>
+                <label>Prasad patil</label>
+            </value>
+            <value>
+                <fullName>Pratik patil</fullName>
+                <default>false</default>
+                <label>Pratik patil</label>
+            </value>
+            <value>
+                <fullName>Pruthviraj Patil</fullName>
+                <default>false</default>
+                <label>Pruthviraj Patil</label>
+            </value>
+            <value>
+                <fullName>Rahul Kumar</fullName>
+                <default>false</default>
+                <label>Rahul Kumar</label>
+            </value>
+            <value>
+                <fullName>Ritesh mahajan</fullName>
+                <default>false</default>
+                <label>Ritesh mahajan</label>
+            </value>
+            <value>
+                <fullName>Rohit Kumar</fullName>
+                <default>false</default>
+                <label>Rohit Kumar</label>
+            </value>
+            <value>
+                <fullName>Roopesh Panchal</fullName>
+                <default>false</default>
+                <label>Roopesh Panchal</label>
+            </value>
+            <value>
+                <fullName>Rushikesh koli</fullName>
+                <default>false</default>
+                <label>Rushikesh koli</label>
+            </value>
+            <value>
+                <fullName>Mr. Sachin Kumar</fullName>
+                <default>false</default>
+                <label>Sachin Kumar</label>
+            </value>
+            <value>
+                <fullName>Sachin Pomaje</fullName>
+                <default>false</default>
+                <label>Sachin Pomaje</label>
+            </value>
+            <value>
+                <fullName>Sandesh Mallikarjun Swami</fullName>
+                <default>false</default>
+                <label>Sandesh Mallikarjun Swami</label>
+            </value>
+            <value>
+                <fullName>Sanket thite</fullName>
+                <default>false</default>
+                <label>Sanket thite</label>
+            </value>
+            <value>
+                <fullName>Sayaji Bhosle</fullName>
+                <default>false</default>
+                <label>Sayaji Bhosle</label>
+            </value>
+            <value>
+                <fullName>Shekhar Dubey</fullName>
+                <default>false</default>
+                <label>Shekhar Dubey</label>
+            </value>
+            <value>
+                <fullName>Shivam Upadhyay</fullName>
+                <default>false</default>
+                <label>Shivam Upadhyay</label>
+            </value>
+            <value>
+                <fullName>Shubham pawar</fullName>
+                <default>false</default>
+                <label>Shubham pawar</label>
+            </value>
+            <value>
+                <fullName>Sopan</fullName>
+                <default>false</default>
+                <label>Sopan</label>
+            </value>
+            <value>
+                <fullName>Supendra</fullName>
+                <default>false</default>
+                <label>Supendra</label>
+            </value>
+            <value>
+                <fullName>Swapnil mahajan</fullName>
+                <default>false</default>
+                <label>Swapnil mahajan</label>
+            </value>
+            <value>
+                <fullName>Talib</fullName>
+                <default>false</default>
+                <label>Talib</label>
+            </value>
+            <value>
+                <fullName>Tejpal bansod</fullName>
+                <default>false</default>
+                <label>Tejpal bansod</label>
+            </value>
+            <value>
+                <fullName>Vijay Kumar</fullName>
+                <default>false</default>
+                <label>Vijay Kumar</label>
+            </value>
+            <value>
+                <fullName>Vijay lokare</fullName>
+                <default>false</default>
+                <label>Vijay lokare</label>
+            </value>
+            <value>
+                <fullName>Vikas Kulal</fullName>
+                <default>false</default>
+                <label>Vikas Kulal</label>
+            </value>
+            <value>
+                <fullName>Vineet</fullName>
+                <default>false</default>
+                <label>Vineet</label>
+            </value>
+            <value>
+                <fullName>Vinod Kumar</fullName>
+                <default>false</default>
+                <label>Vinod Kumar</label>
+            </value>
+            <value>
+                <fullName>Vishal Sharma</fullName>
+                <default>false</default>
+                <label>VISHAL SHARMA</label>
+            </value>
+            <value>
+                <fullName>Vishwajeet Mane</fullName>
+                <default>false</default>
+                <label>Vishwajeet Mane</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

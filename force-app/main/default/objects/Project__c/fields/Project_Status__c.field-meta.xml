@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Status__c</fullName>
+    <label>Project Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Finance Team</fullName>
+                <default>true</default>
+                <label>Finance - Advance Payment</label>
+            </value>
+            <value>
+                <fullName>SM_team</fullName>
+                <default>false</default>
+                <label>Site Mapping Team</label>
+            </value>
+            <value>
+                <fullName>Vendor Production</fullName>
+                <default>false</default>
+                <label>Vendor Production</label>
+            </value>
+            <value>
+                <fullName>Design_Team</fullName>
+                <default>false</default>
+                <label>Design Team</label>
+            </value>
+            <value>
+                <fullName>PPC Team</fullName>
+                <default>false</default>
+                <label>PPC Team</label>
+            </value>
+            <value>
+                <fullName>SCM</fullName>
+                <default>false</default>
+                <label>SCM Team</label>
+            </value>
+            <value>
+                <fullName>Production Team</fullName>
+                <default>false</default>
+                <label>Production Team</label>
+            </value>
+            <value>
+                <fullName>Quality Team</fullName>
+                <default>false</default>
+                <label>Quality Team</label>
+            </value>
+            <value>
+                <fullName>Finance Team - Pre Dispatch</fullName>
+                <default>false</default>
+                <label>Finance - Pre Dispatch</label>
+            </value>
+            <value>
+                <fullName>Project Checklist</fullName>
+                <default>false</default>
+                <label>Project Checklist</label>
+            </value>
+            <value>
+                <fullName>SCM - Inventory Mgmt</fullName>
+                <default>false</default>
+                <label>SCM - Inventory Mgmt</label>
+            </value>
+            <value>
+                <fullName>PPC and Production</fullName>
+                <default>false</default>
+                <label>PPC and Production</label>
+            </value>
+            <value>
+                <fullName>Project &amp; Commissioning</fullName>
+                <default>false</default>
+                <label>Project &amp; Commissioning</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Stores &amp; Logistics</fullName>
+                <default>false</default>
+                <label>Stores &amp; Logistics</label>
+            </value>
+            <value>
+                <fullName>Installation and Commissioning</fullName>
+                <default>false</default>
+                <label>Installation and Commissioning</label>
+            </value>
+            <value>
+                <fullName>Collection Milestone</fullName>
+                <default>false</default>
+                <label>Collection Milestone</label>
+            </value>
+            <value>
+                <fullName>Project Management Team</fullName>
+                <default>false</default>
+                <label>Project Management Team</label>
+            </value>
+            <value>
+                <fullName>Invoicing</fullName>
+                <default>false</default>
+                <label>Invoice Info</label>
+            </value>
+            <value>
+                <fullName>Dispatch Team</fullName>
+                <default>false</default>
+                <label>Dispatch Team</label>
+            </value>
+            <value>
+                <fullName>Finance Team - Post Delivery</fullName>
+                <default>false</default>
+                <label>Finance - Post Delivery</label>
+            </value>
+            <value>
+                <fullName>Installation Team</fullName>
+                <default>false</default>
+                <label>Installation Team</label>
+            </value>
+            <value>
+                <fullName>Final Payment</fullName>
+                <default>false</default>
+                <label>Final Payment</label>
+            </value>
+            <value>
+                <fullName>Project Completed</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>Project Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

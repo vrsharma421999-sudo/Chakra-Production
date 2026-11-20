@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Production_Remarks__c</fullName>
+    <label>Production Remarks</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>On Cladding</fullName>
+                <default>false</default>
+                <label>On Cladding</label>
+            </value>
+            <value>
+                <fullName>On Testing</fullName>
+                <default>false</default>
+                <label>On Testing</label>
+            </value>
+            <value>
+                <fullName>On Fabrication</fullName>
+                <default>false</default>
+                <label>On Fabrication</label>
+            </value>
+            <value>
+                <fullName>On Assy.</fullName>
+                <default>false</default>
+                <label>On Assy.</label>
+            </value>
+            <value>
+                <fullName>Cladding Pending</fullName>
+                <default>false</default>
+                <label>Cladding Pending</label>
+            </value>
+            <value>
+                <fullName>Substrate NA</fullName>
+                <default>false</default>
+                <label>Substrate NA</label>
+            </value>
+            <value>
+                <fullName>BOX NA</fullName>
+                <default>false</default>
+                <label>BOX NA</label>
+            </value>
+            <value>
+                <fullName>Loose mtr NA</fullName>
+                <default>false</default>
+                <label>Loose mtr NA</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>On Packing</fullName>
+                <default>false</default>
+                <label>ON PACKING</label>
+            </value>
+            <value>
+                <fullName>M/C PARTS Not available</fullName>
+                <default>false</default>
+                <label>M/C PARTS Not available</label>
+            </value>
+            <value>
+                <fullName>On Laser Cutting</fullName>
+                <default>false</default>
+                <label>On Laser Cutting</label>
+            </value>
+            <value>
+                <fullName>Material Not available</fullName>
+                <default>false</default>
+                <label>Material Not available</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

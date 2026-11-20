@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Validation_Finance_Team_PD</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Project_Status__c , &quot;Finance Team - Post Delivery&quot;),
+   
+        ISBLANK(Client_RECD_Received_Date__c)
+        
+    
+)</errorConditionFormula>
+    <errorMessage>Client RECD Received Date is required before moving the Project Status to &quot;Finance Team - Post Delivery&quot;.</errorMessage>
+</ValidationRule>

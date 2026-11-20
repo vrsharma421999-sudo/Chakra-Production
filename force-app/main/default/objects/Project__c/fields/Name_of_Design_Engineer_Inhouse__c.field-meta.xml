@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_Design_Engineer_Inhouse__c</fullName>
+    <label>Name of Design Engineer Inhouse</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tejpal</fullName>
+                <default>false</default>
+                <label>Tejpal</label>
+            </value>
+            <value>
+                <fullName>Akshay K</fullName>
+                <default>false</default>
+                <label>Akshay K</label>
+            </value>
+            <value>
+                <fullName>Gautam</fullName>
+                <default>false</default>
+                <label>Gautam</label>
+            </value>
+            <value>
+                <fullName>Pavan M</fullName>
+                <default>false</default>
+                <label>Pavan M</label>
+            </value>
+            <value>
+                <fullName>Gaurang</fullName>
+                <default>false</default>
+                <label>Gaurang</label>
+            </value>
+            <value>
+                <fullName>Ajay G</fullName>
+                <default>false</default>
+                <label>Ajay G</label>
+            </value>
+            <value>
+                <fullName>Pankaj</fullName>
+                <default>false</default>
+                <label>Pankaj</label>
+            </value>
+            <value>
+                <fullName>Anand C</fullName>
+                <default>false</default>
+                <label>Anand C</label>
+            </value>
+            <value>
+                <fullName>Jayant B</fullName>
+                <default>false</default>
+                <label>Jayant B</label>
+            </value>
+            <value>
+                <fullName>Prasad A</fullName>
+                <default>false</default>
+                <label>Prasad A</label>
+            </value>
+            <value>
+                <fullName>Rushi R</fullName>
+                <default>false</default>
+                <label>Rushi R</label>
+            </value>
+            <value>
+                <fullName>Someshwar</fullName>
+                <default>false</default>
+                <label>Someshwar</label>
+            </value>
+            <value>
+                <fullName>Swapnil M</fullName>
+                <default>false</default>
+                <label>Swapnil M</label>
+            </value>
+            <value>
+                <fullName>NAKUL</fullName>
+                <default>false</default>
+                <label>NAKUL</label>
+            </value>
+            <value>
+                <fullName>PRATIKSHA</fullName>
+                <default>false</default>
+                <label>PRATIKSHA</label>
+            </value>
+            <value>
+                <fullName>FAHIM</fullName>
+                <default>false</default>
+                <label>FAHIM</label>
+            </value>
+            <value>
+                <fullName>BY-VENDOR</fullName>
+                <default>false</default>
+                <label>BY-VENDOR</label>
+            </value>
+            <value>
+                <fullName>PRANIT G</fullName>
+                <default>false</default>
+                <label>PRANIT G</label>
+            </value>
+            <value>
+                <fullName>ANIKET.C</fullName>
+                <default>false</default>
+                <label>ANIKET.C</label>
+            </value>
+            <value>
+                <fullName>HARSHAL.P</fullName>
+                <default>false</default>
+                <label>HARSHAL.P</label>
+            </value>
+            <value>
+                <fullName>PAVAN.P</fullName>
+                <default>false</default>
+                <label>PAVAN.P</label>
+            </value>
+            <value>
+                <fullName>GOPAL.P</fullName>
+                <default>false</default>
+                <label>GOPAL.P</label>
+            </value>
+            <value>
+                <fullName>RITESH</fullName>
+                <default>false</default>
+                <label>RITESH</label>
+            </value>
+            <value>
+                <fullName>Abhay Pandey</fullName>
+                <default>false</default>
+                <label>Abhay Pandey</label>
+            </value>
+            <value>
+                <fullName>Ankit Kumar</fullName>
+                <default>false</default>
+                <label>Ankit Kumar</label>
+            </value>
+            <value>
+                <fullName>Bharathi Raja N</fullName>
+                <default>false</default>
+                <label>Bharathi Raja N</label>
+            </value>
+            <value>
+                <fullName>Gaurav Shubhas Gawali</fullName>
+                <default>false</default>
+                <label>Gaurav Shubhas Gawali</label>
+            </value>
+            <value>
+                <fullName>Harshal Chaudhari</fullName>
+                <default>false</default>
+                <label>Harshal Chaudhari</label>
+            </value>
+            <value>
+                <fullName>Laukik Fegade</fullName>
+                <default>false</default>
+                <label>Laukik Fegade</label>
+            </value>
+            <value>
+                <fullName>Nadeem   Naikwadi</fullName>
+                <default>false</default>
+                <label>Nadeem   Naikwadi</label>
+            </value>
+            <value>
+                <fullName>Onkar Shrivastav</fullName>
+                <default>false</default>
+                <label>Onkar Shrivastav</label>
+            </value>
+            <value>
+                <fullName>Prasad Ajay Patil</fullName>
+                <default>false</default>
+                <label>Prasad Ajay Patil</label>
+            </value>
+            <value>
+                <fullName>RUSHIKESH KOLI</fullName>
+                <default>false</default>
+                <label>RUSHIKESH KOLI</label>
+            </value>
+            <value>
+                <fullName>Shubham Bapu Pawar</fullName>
+                <default>false</default>
+                <label>Shubham Bapu Pawar</label>
+            </value>
+            <value>
+                <fullName>Shubham Sinare</fullName>
+                <default>false</default>
+                <label>Shubham Sinare</label>
+            </value>
+            <value>
+                <fullName>SUMIT MULAY</fullName>
+                <default>false</default>
+                <label>SUMIT MULAY</label>
+            </value>
+            <value>
+                <fullName>Vijay Lohakre</fullName>
+                <default>false</default>
+                <label>Vijay Lohakre</label>
+            </value>
+            <value>
+                <fullName>Aniket Gajghate</fullName>
+                <default>false</default>
+                <label>Aniket Gajghate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

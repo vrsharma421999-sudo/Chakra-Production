@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>LEN( Company_Name__c ) &gt; 60</errorConditionFormula>
+    <errorDisplayField>Company_Name__c</errorDisplayField>
+    <errorMessage>Company Name can be of 80 chracters</errorMessage>
+</ValidationRule>

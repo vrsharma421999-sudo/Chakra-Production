@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnHold</fullName>
+    <active>true</active>
+    <errorConditionFormula>(TEXT(Status)==&apos; Lead Status&apos; ||
+  TEXT(Lead_Status__c) ==&apos;On Hold&apos;) &amp;&amp;
+  ISBLANK( TEXT(On_Hold_Status__c))</errorConditionFormula>
+    <errorDisplayField>On_Hold_Status__c</errorDisplayField>
+    <errorMessage>Kindly mention the On Hold Reason</errorMessage>
+</ValidationRule>

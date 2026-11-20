@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_Mapping_List_View</fullName>
+    <columns>NAME</columns>
+    <columns>RECD_Sr_No__c</columns>
+    <columns>Project_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Manufacturing_Location__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Project_Ageing__c</columns>
+    <columns>Site_MappingChekbox__c</columns>
+    <columns>Design_ModelCheckbox__c</columns>
+    <columns>Site_Mapping_Data__c</columns>
+    <columns>Site_Mapping_Remarks__c</columns>
+    <columns>Site_Mapping_Date__c</columns>
+    <columns>Updated_B__c</columns>
+    <columns>Site_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Site Mapping List View</label>
+</ListView>

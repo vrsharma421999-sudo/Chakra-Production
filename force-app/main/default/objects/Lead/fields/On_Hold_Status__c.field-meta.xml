@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Hold_Status__c</fullName>
+    <label>On Hold Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Regulation</fullName>
+                <default>false</default>
+                <label>No Regulation</label>
+            </value>
+            <value>
+                <fullName>Not Intereseted</fullName>
+                <default>false</default>
+                <label>Not Intereseted</label>
+            </value>
+            <value>
+                <fullName>Incorrect POC</fullName>
+                <default>false</default>
+                <label>Incorrect POC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

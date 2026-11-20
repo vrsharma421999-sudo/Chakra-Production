@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SR_Pack_Updated_By__c</fullName>
+    <label>SR Pack Updated By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Akshay Khapare</fullName>
+                <default>false</default>
+                <label>Akshay Khapare</label>
+            </value>
+            <value>
+                <fullName>Shrenik Rajendra Sonule</fullName>
+                <default>false</default>
+                <label>Shrenik Rajendra Sonule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

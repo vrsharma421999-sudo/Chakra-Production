@@ -1,0 +1,22 @@
+<apex:page standardController="Visit_Plan__c"  extensions="CheckInServiceVisitCtrl" sidebar="false" showHeader="false" lightningStylesheets="true">
+         <apex:includescript value="https://code.jquery.com/jquery-3.2.1.min.js" />
+    <script>
+        window.onload= function doTheGeoThang() {
+        navigator.geolocation.getCurrentPosition(
+        function(position) {
+        findMe(position.coords.latitude,position.coords.longitude);
+        }
+        );
+        }
+        
+    </script>
+    
+    <apex:form id="theform">
+        <apex:pageMessages > </apex:pageMessages>
+        <!--<apex:pageMessage severity="error" strength="3" summary="Location already captured..!" rendered="{! job.Check_In_Time__c !=null}"/>-->
+        <apex:actionFunction name="findMe" action="{!iFoundYou1}" reRender="theform" >
+            <apex:param name="lat" value="" assignTo="{!valueLat}"/>
+            <apex:param name="long" value="" assignTo="{!valueLong}" />
+        </apex:actionFunction>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Chakr_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(Project_Status__c),
+ISPICKVAL(Project_Status__c , &quot;Final Payment&quot;),
+TEXT(PRIORVALUE(Project_Status__c)) = &quot;Installation Team&quot;,
+
+OR(
+AND(
+Comissioning_CR_Signoff__c = &quot;Chakr&quot;,
+ISBLANK(Warranty_Start_Date__c)
+),
+AND(
+Comissioning_CR_Signoff__c &lt;&gt; &quot;Chakr&quot;,
+ISBLANK(Client_RECD_Received_Date__c)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Before moving to the &quot;Final Payment&quot; Stage, please complete the required details:
+- If Commissioning and CR Signoff is &quot;Chakr&quot;.Fill  &quot;Commissioning Date&quot;
+-  If Commissioning and CR Signoff is &quot;Channel&quot;, Fill &quot;Client RECD Received Date&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+/* Make Quick Action modal 80% of screen width */
+.THIS .slds-modal__container {
+    width: 80vw !important;
+    max-width: 80vw !important;
+}
+
+/* Optional: allow horizontal scroll if table is large */
+.THIS .tableWrapper {
+    overflow-x: auto;
+}
+
+/* Improve spacing */
+.THIS.customModalWrapper {
+    min-height: 300px;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Installation_Manager__c</fullName>
+    <label>Assigned Installation Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nitin</fullName>
+                <default>false</default>
+                <label>Nitin</label>
+            </value>
+            <value>
+                <fullName>Selva</fullName>
+                <default>false</default>
+                <label>Selva</label>
+            </value>
+            <value>
+                <fullName>Prasan</fullName>
+                <default>false</default>
+                <label>Prasan</label>
+            </value>
+            <value>
+                <fullName>Assignment Pending</fullName>
+                <default>true</default>
+                <label>Assignment Pending</label>
+            </value>
+            <value>
+                <fullName>Rugved Vijay Rane</fullName>
+                <default>false</default>
+                <label>Rugved Vijay Rane</label>
+            </value>
+            <value>
+                <fullName>Ashutosh Mehta</fullName>
+                <default>false</default>
+                <label>Ashutosh Mehta</label>
+            </value>
+            <value>
+                <fullName>Saumendra Kundu</fullName>
+                <default>false</default>
+                <label>Saumendra Kundu</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

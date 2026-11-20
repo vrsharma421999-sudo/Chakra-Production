@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GST_15_characters</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    LEN(TRIM(GST__c)) &gt; 0,
+    TRIM(GST__c) &lt;&gt; &quot;0&quot;,
+    NOT(
+        REGEX(
+            UPPER(TRIM(GST__c)),
+            &quot;^[0-9]{2}([A-Z]{5}[0-9]{4}[A-Z]|[A-Z]{4}[0-9]{5}[A-Z])[A-Z0-9][A-ZDC][A-Z0-9]$&quot;
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>GST__c</errorDisplayField>
+    <errorMessage>GST Field should either be put &quot;0&quot; if unregistered, or should be of 15 digits</errorMessage>
+</ValidationRule>

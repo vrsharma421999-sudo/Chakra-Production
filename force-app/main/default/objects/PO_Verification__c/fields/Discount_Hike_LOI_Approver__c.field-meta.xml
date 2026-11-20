@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_Hike_LOI_Approver__c</fullName>
+    <label>Discount/Hike/LOI Approver</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sales Leader</fullName>
+                <default>false</default>
+                <label>Sales Leader</label>
+            </value>
+            <value>
+                <fullName>Sales Ops Head</fullName>
+                <default>false</default>
+                <label>Sales Ops Head</label>
+            </value>
+            <value>
+                <fullName>CFO</fullName>
+                <default>false</default>
+                <label>CFO</label>
+            </value>
+            <value>
+                <fullName>Executive Director</fullName>
+                <default>false</default>
+                <label>Executive Director</label>
+            </value>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>Head GTM Strategy</fullName>
+                <default>false</default>
+                <label>Head GTM Strategy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

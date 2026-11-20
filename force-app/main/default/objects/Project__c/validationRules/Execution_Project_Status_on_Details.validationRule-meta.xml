@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Execution_Project_Status_on_Details</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+TEXT(Project_Execution_Status__c)!=&apos;LIVE&apos;,
+ISCHANGED(Project_Status__c),
+OR(
+
+ISPICKVAL(Project_Status__c, &quot;SM_team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Design_Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;PPC Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;SCM&quot;),
+ISPICKVAL(Project_Status__c, &quot;Production Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Quality Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Finance Team - Pre Dispatch&quot;),
+ISPICKVAL(Project_Status__c, &quot;Project Management Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Invoicing&quot;),
+ISPICKVAL(Project_Status__c, &quot;Dispatch Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Finance Team - Post Delivery&quot;),
+ISPICKVAL(Project_Status__c, &quot;Installation Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Final Payment&quot;),
+ISPICKVAL(Project_Status__c, &quot;Project Completed&quot;)
+
+)
+)</errorConditionFormula>
+    <errorMessage>Project Execution Status is either on Hold/Cancelled; Please reach out to Project Manager</errorMessage>
+</ValidationRule>

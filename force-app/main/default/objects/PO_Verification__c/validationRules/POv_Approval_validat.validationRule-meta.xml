@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POv_Approval_validat</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT(Status__c) = &quot;PO Approved&quot;&amp;&amp; TEXT(Approval_Status__c)!= &quot;Approved&quot;</errorConditionFormula>
+    <errorMessage>PO Status should be approved by Finance Team and PM to update status</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_CR_signed_Yes_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(PRIORVALUE(CR_Signed__c), &quot;Yes&quot;),
+    ISPICKVAL(CR_Signed__c, &quot;No&quot;),
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorMessage>CR Signed cannot be changed from Yes to No. Please contact the System Administrator.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Installation_Vendor__c</fullName>
+    <label>Assigned Installation Vendor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AK Enterprises</fullName>
+                <default>false</default>
+                <label>AK Enterprises</label>
+            </value>
+            <value>
+                <fullName>Anurag Engineering</fullName>
+                <default>false</default>
+                <label>Anurag Engineering</label>
+            </value>
+            <value>
+                <fullName>AP Engineers</fullName>
+                <default>false</default>
+                <label>AP Engineers</label>
+            </value>
+            <value>
+                <fullName>Axiss control</fullName>
+                <default>false</default>
+                <label>Axiss control</label>
+            </value>
+            <value>
+                <fullName>Bhoomi</fullName>
+                <default>false</default>
+                <label>Bhoomi Process Management</label>
+            </value>
+            <value>
+                <fullName>Blessy Warehouse and Logistics Service</fullName>
+                <default>false</default>
+                <label>Blessy Warehouse and Logistics Service</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Client Scope</fullName>
+                <default>false</default>
+                <label>Client Scope</label>
+            </value>
+            <value>
+                <fullName>Divyansh Engineering Services</fullName>
+                <default>false</default>
+                <label>Divyansh Engineering Services</label>
+            </value>
+            <value>
+                <fullName>EE</fullName>
+                <default>false</default>
+                <label>EE Solution (Engineering &amp; Environmental Solution)</label>
+            </value>
+            <value>
+                <fullName>EKANSH ENTERPRISES</fullName>
+                <default>false</default>
+                <label>EKANSH ENTERPRISES</label>
+            </value>
+            <value>
+                <fullName>ELECTECH SOLUTIONS</fullName>
+                <default>false</default>
+                <label>ELECTECH SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>ENVIRO COMFORT SERVICES</fullName>
+                <default>false</default>
+                <label>ENVIRO COMFORT SERVICES</label>
+            </value>
+            <value>
+                <fullName>Erecto Engineers</fullName>
+                <default>false</default>
+                <label>Erecto Engineers</label>
+            </value>
+            <value>
+                <fullName>Erode Talent Traders</fullName>
+                <default>false</default>
+                <label>Erode Talent Traders</label>
+            </value>
+            <value>
+                <fullName>Fruken Fasteners</fullName>
+                <default>false</default>
+                <label>Fruken Fasteners</label>
+            </value>
+            <value>
+                <fullName>Gaurav Enterprises</fullName>
+                <default>false</default>
+                <label>Gaurav Enterprises</label>
+            </value>
+            <value>
+                <fullName>Gayatri Engineering</fullName>
+                <default>false</default>
+                <label>Gayatri Engineering</label>
+            </value>
+            <value>
+                <fullName>Gayatri Insulation</fullName>
+                <default>false</default>
+                <label>Gayatri Insulation</label>
+            </value>
+            <value>
+                <fullName>GB Associates</fullName>
+                <default>false</default>
+                <label>GB Associates</label>
+            </value>
+            <value>
+                <fullName>Georson Tech Private Limited</fullName>
+                <default>false</default>
+                <label>Georson Tech Private Limited</label>
+            </value>
+            <value>
+                <fullName>Gronotech</fullName>
+                <default>false</default>
+                <label>Gronotech</label>
+            </value>
+            <value>
+                <fullName>Gurudeva Enterprises</fullName>
+                <default>false</default>
+                <label>Gurudeva Enterprises</label>
+            </value>
+            <value>
+                <fullName>HIBATECH ENGINEERING INDUSTRIES</fullName>
+                <default>false</default>
+                <label>HIBATECH ENGINEERING INDUSTRIES</label>
+            </value>
+            <value>
+                <fullName>H N Contractor and Fabricator</fullName>
+                <default>false</default>
+                <label>H N Contractor and Fabricator</label>
+            </value>
+            <value>
+                <fullName>JMD Energy Service</fullName>
+                <default>false</default>
+                <label>JMD Energy Service</label>
+            </value>
+            <value>
+                <fullName>KRISHNA ENTERPRISES</fullName>
+                <default>false</default>
+                <label>KRISHNA ENTERPRISES</label>
+            </value>
+            <value>
+                <fullName>Lotus Enviro Systems Private Ltd</fullName>
+                <default>false</default>
+                <label>Lotus Enviro Systems Private Ltd</label>
+            </value>
+            <value>
+                <fullName>Mahi Erectors</fullName>
+                <default>false</default>
+                <label>Mahi Erectors</label>
+            </value>
+            <value>
+                <fullName>Maurya Interiors</fullName>
+                <default>false</default>
+                <label>Maurya Interiors</label>
+            </value>
+            <value>
+                <fullName>Microtech Systems</fullName>
+                <default>false</default>
+                <label>Microtech Systems</label>
+            </value>
+            <value>
+                <fullName>Mithra Insulation</fullName>
+                <default>false</default>
+                <label>Mithra Insulation</label>
+            </value>
+            <value>
+                <fullName>NaitikSai</fullName>
+                <default>false</default>
+                <label>NaitikSai</label>
+            </value>
+            <value>
+                <fullName>NBS Engineers</fullName>
+                <default>false</default>
+                <label>NBS Engineers</label>
+            </value>
+            <value>
+                <fullName>NEWCON CONSULTANTS AND LABORATORIES</fullName>
+                <default>false</default>
+                <label>NEWCON CONSULTANTS AND LABORATORIES</label>
+            </value>
+            <value>
+                <fullName>Offset Engineers</fullName>
+                <default>false</default>
+                <label>Offset Engineers</label>
+            </value>
+            <value>
+                <fullName>OMKAR TECH POWER SERVICE</fullName>
+                <default>false</default>
+                <label>OMKAR TECH POWER SERVICE</label>
+            </value>
+            <value>
+                <fullName>PUNJIRA INFRAPROJECTS LLP</fullName>
+                <default>false</default>
+                <label>PUNJIRA INFRAPROJECTS LLP</label>
+            </value>
+            <value>
+                <fullName>Renuka Enterprises</fullName>
+                <default>false</default>
+                <label>Renuka Enterprises</label>
+            </value>
+            <value>
+                <fullName>Rion Engineers</fullName>
+                <default>false</default>
+                <label>Rion Engineers</label>
+            </value>
+            <value>
+                <fullName>Saafi Associates</fullName>
+                <default>false</default>
+                <label>Saafi Associates</label>
+            </value>
+            <value>
+                <fullName>S A Engineering</fullName>
+                <default>false</default>
+                <label>S A Engineering</label>
+            </value>
+            <value>
+                <fullName>Satyam Power Electrical</fullName>
+                <default>false</default>
+                <label>Satyam Power Electrical</label>
+            </value>
+            <value>
+                <fullName>SCS Enviro Services Pvt Ltd</fullName>
+                <default>false</default>
+                <label>SCS Enviro Services Pvt Ltd</label>
+            </value>
+            <value>
+                <fullName>Shraddha Fabrication</fullName>
+                <default>false</default>
+                <label>Shraddha Fabrication</label>
+            </value>
+            <value>
+                <fullName>Shri Krishna Construction</fullName>
+                <default>false</default>
+                <label>Shri Krishna Construction</label>
+            </value>
+            <value>
+                <fullName>SHRI LAKSHMI TRADERS &amp; ENGG. CORPORATION</fullName>
+                <default>false</default>
+                <label>SHRI LAKSHMI TRADERS &amp; ENGG. CORPORATION</label>
+            </value>
+            <value>
+                <fullName>Shri Shyam Engineering</fullName>
+                <default>false</default>
+                <label>Shri Shyam Engineering</label>
+            </value>
+            <value>
+                <fullName>SNEHA HI-TECH PRODUCTS &amp; SNEHA TEST HOUSE</fullName>
+                <default>false</default>
+                <label>SNEHA HI-TECH PRODUCTS &amp; SNEHA TEST HOUSE</label>
+            </value>
+            <value>
+                <fullName>Star Enterprises</fullName>
+                <default>false</default>
+                <label>Star Enterprises</label>
+            </value>
+            <value>
+                <fullName>Starfoils</fullName>
+                <default>false</default>
+                <label>Starfoils</label>
+            </value>
+            <value>
+                <fullName>SUBHASH INSULATION WORKS</fullName>
+                <default>false</default>
+                <label>SUBHASH INSULATION WORKS</label>
+            </value>
+            <value>
+                <fullName>Sudhir Enterprises</fullName>
+                <default>false</default>
+                <label>Sudhir Enterprises</label>
+            </value>
+            <value>
+                <fullName>Thinkcotech</fullName>
+                <default>false</default>
+                <label>Thinkcotech</label>
+            </value>
+            <value>
+                <fullName>TMS Engineering</fullName>
+                <default>false</default>
+                <label>TMS Engineering</label>
+            </value>
+            <value>
+                <fullName>Triratna Power Solutions</fullName>
+                <default>false</default>
+                <label>Triratna Power Solutions</label>
+            </value>
+            <value>
+                <fullName>Vaibhav Engineers</fullName>
+                <default>false</default>
+                <label>Vaibhav Engineers</label>
+            </value>
+            <value>
+                <fullName>VAT Tech</fullName>
+                <default>false</default>
+                <label>VAT Tech</label>
+            </value>
+            <value>
+                <fullName>VDS Udyog</fullName>
+                <default>false</default>
+                <label>VDS Udyog</label>
+            </value>
+            <value>
+                <fullName>Velavan Insulation</fullName>
+                <default>false</default>
+                <label>Velavan Insulation</label>
+            </value>
+            <value>
+                <fullName>Vishnu Enterprises</fullName>
+                <default>false</default>
+                <label>Vishnu Enterprises</label>
+            </value>
+            <value>
+                <fullName>YMK Power solution</fullName>
+                <default>false</default>
+                <label>YMK Power solution</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

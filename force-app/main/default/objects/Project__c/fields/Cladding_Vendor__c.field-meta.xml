@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cladding_Vendor__c</fullName>
+    <label>Cladding Vendor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assignment Pending</fullName>
+                <default>false</default>
+                <label>Assignment Pending</label>
+            </value>
+            <value>
+                <fullName>JMD Energy</fullName>
+                <default>false</default>
+                <label>JMD Energy</label>
+            </value>
+            <value>
+                <fullName>Divyansh Engineering</fullName>
+                <default>false</default>
+                <label>Divyansh Engineering</label>
+            </value>
+            <value>
+                <fullName>Shri Gayatri Insulation</fullName>
+                <default>false</default>
+                <label>Shri Gayatri Insulation</label>
+            </value>
+            <value>
+                <fullName>Anurag Engineering</fullName>
+                <default>false</default>
+                <label>Anurag Engineering</label>
+            </value>
+            <value>
+                <fullName>Vishnu Enterprises</fullName>
+                <default>false</default>
+                <label>Vishnu Enterprises</label>
+            </value>
+            <value>
+                <fullName>Gurudeva Enterprises</fullName>
+                <default>false</default>
+                <label>Gurudeva Enterprises</label>
+            </value>
+            <value>
+                <fullName>Ekansh Enterprises</fullName>
+                <default>false</default>
+                <label>Ekansh Enterprises</label>
+            </value>
+            <value>
+                <fullName>Ramling Enterprises</fullName>
+                <default>false</default>
+                <label>Ramling Enterprises</label>
+            </value>
+            <value>
+                <fullName>Ambey Insulations</fullName>
+                <default>false</default>
+                <label>Ambey Insulations</label>
+            </value>
+            <value>
+                <fullName>Subhash Insulations</fullName>
+                <default>false</default>
+                <label>Subhash Insulations</label>
+            </value>
+            <value>
+                <fullName>Gayatri Engineering</fullName>
+                <default>false</default>
+                <label>Gayatri Engineering</label>
+            </value>
+            <value>
+                <fullName>Velavan Insulations</fullName>
+                <default>false</default>
+                <label>Velavan Insulations</label>
+            </value>
+            <value>
+                <fullName>Mitra Insulations</fullName>
+                <default>false</default>
+                <label>Mitra Insulations</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

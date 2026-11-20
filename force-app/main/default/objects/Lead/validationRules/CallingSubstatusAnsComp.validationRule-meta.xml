@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CallingSubstatusAnsComp</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName &lt;&gt; &apos;Chakr_Marjak&apos;
+&amp;&amp;
+(
+ISPICKVAL(PRIORVALUE( Status ),&quot;Calling&quot;)
+&amp;&amp;
+NOT(TEXT(Calling_Status__c) == &apos;Answered - Discussion Completed&apos;)
+)
+&amp;&amp;
+TEXT(Status) ==&apos;Lead Status&apos;</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You can&apos;t change the stage until Call Answered-Discussion Completed</errorMessage>
+</ValidationRule>

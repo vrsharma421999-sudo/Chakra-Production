@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Type__c</fullName>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NDA, Service Agreement</fullName>
+                <default>false</default>
+                <label>NDA, Service Agreement</label>
+            </value>
+            <value>
+                <fullName>Vendor Agreement</fullName>
+                <default>false</default>
+                <label>Vendor Agreement</label>
+            </value>
+            <value>
+                <fullName>Lease Agreement</fullName>
+                <default>false</default>
+                <label>Lease Agreement</label>
+            </value>
+            <value>
+                <fullName>Employment Agreement</fullName>
+                <default>false</default>
+                <label>Employment Agreement</label>
+            </value>
+            <value>
+                <fullName>Consultancy Agreement</fullName>
+                <default>false</default>
+                <label>Consultancy Agreement</label>
+            </value>
+            <value>
+                <fullName>Settlement Agreement</fullName>
+                <default>false</default>
+                <label>Settlement Agreement</label>
+            </value>
+            <value>
+                <fullName>Addendum/Amendment</fullName>
+                <default>false</default>
+                <label>Addendum/Amendment</label>
+            </value>
+            <value>
+                <fullName>Purchase Agreement</fullName>
+                <default>false</default>
+                <label>Purchase Agreement</label>
+            </value>
+            <value>
+                <fullName>Licensing Agreement</fullName>
+                <default>false</default>
+                <label>Licensing Agreement</label>
+            </value>
+            <value>
+                <fullName>Partnership Agreement</fullName>
+                <default>false</default>
+                <label>Partnership Agreement</label>
+            </value>
+            <value>
+                <fullName>MoU</fullName>
+                <default>false</default>
+                <label>MoU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

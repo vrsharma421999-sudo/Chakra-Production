@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converted_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ $Profile.Name = &quot;Pre Sales Rep&quot;,
+OR(
+ISPICKVAL(PRIORVALUE(Status),&quot;Lead Status&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;Transferred to Conversion Team&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;Open&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;Assigned&quot;),
+ISPICKVAL(PRIORVALUE(Status),&quot;Calling&quot;)
+),
+TEXT( Status )==&quot;Converted&quot;
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have permission to convert the Lead</errorMessage>
+</ValidationRule>

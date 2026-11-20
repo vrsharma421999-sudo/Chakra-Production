@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualified_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>(TEXT(Status)==&apos; Lead Status&apos; ||
+  TEXT(Lead_Status__c) ==&apos;Qualified&apos;) &amp;&amp;
+  ISBLANK( TEXT( Qualified_Status__c ))</errorConditionFormula>
+    <errorDisplayField>Qualified_Status__c</errorDisplayField>
+    <errorMessage>Kindly mention the On Qualified Status</errorMessage>
+</ValidationRule>

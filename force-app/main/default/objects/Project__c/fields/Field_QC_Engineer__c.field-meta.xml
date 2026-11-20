@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_QC_Engineer__c</fullName>
+    <label>Field QC Engineer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Narendra Kumar</fullName>
+                <default>false</default>
+                <label>Narendra Kumar</label>
+            </value>
+            <value>
+                <fullName>Raushan Kumar</fullName>
+                <default>false</default>
+                <label>Raushan Kumar</label>
+            </value>
+            <value>
+                <fullName>Hagavane Mahesh Sampat</fullName>
+                <default>false</default>
+                <label>Hagavane Mahesh Sampat</label>
+            </value>
+            <value>
+                <fullName>Mahesh Arumugam</fullName>
+                <default>false</default>
+                <label>Mahesh Arumugam</label>
+            </value>
+            <value>
+                <fullName>SREENIVASANAS</fullName>
+                <default>false</default>
+                <label>SREENIVASANAS</label>
+            </value>
+            <value>
+                <fullName>Neerathilingam N</fullName>
+                <default>false</default>
+                <label>Neerathilingam N</label>
+            </value>
+            <value>
+                <fullName>Dhananjay Upadhyayay</fullName>
+                <default>false</default>
+                <label>Dhananjay Upadhyayay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

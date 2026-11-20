@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Collection__c</fullName>
+    <formula>BLANKVALUE(Collection_Milestone_1__c, 0) +
+BLANKVALUE(Collection_Milestone_2__c, 0) +
+BLANKVALUE(Collection_Milestone_3__c, 0) +
+BLANKVALUE(Collection_Milestone_4__c, 0) +
+BLANKVALUE(Collection_Milestone_5__c, 0) +
+BLANKVALUE(Collection_Milestone_6__c, 0) +
+BLANKVALUE(Collection_Milestone_7__c, 0) +
+BLANKVALUE(Collection_Milestone_8__c, 0) +
+BLANKVALUE(Collection_Milestone_9__c, 0) +
+BLANKVALUE(Collection_Milestone_10__c, 0) +
+BLANKVALUE(Collection_Milestone_11__c, 0) +
+BLANKVALUE(Collection_Milestone_12__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Collection</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

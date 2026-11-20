@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_change_the_PO_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(Status__c),
+OR(
+TEXT(Status__c) = &quot;Approved&quot;,
+TEXT(Status__c) = &quot;Rejected&quot;,
+TEXT(Status__c) = &quot;Sent for Revision&quot;
+),
+NOT(
+OR(
+$Profile.Name = &quot;Project Management Team&quot;,
+$Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;PM Head&quot;
+)
+)
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t change the PO Status</errorMessage>
+</ValidationRule>

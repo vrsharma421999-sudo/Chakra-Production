@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Design_Updated_By__c</fullName>
+    <label>Design Updated By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pratik G</fullName>
+                <default>false</default>
+                <label>Pratik G</label>
+            </value>
+            <value>
+                <fullName>Sumit M</fullName>
+                <default>false</default>
+                <label>Sumit M</label>
+            </value>
+            <value>
+                <fullName>Someshwar</fullName>
+                <default>false</default>
+                <label>Someshwar</label>
+            </value>
+            <value>
+                <fullName>Rushi R</fullName>
+                <default>false</default>
+                <label>Rushi R</label>
+            </value>
+            <value>
+                <fullName>Tejpal Bansod</fullName>
+                <default>false</default>
+                <label>Tejpal Bansod</label>
+            </value>
+            <value>
+                <fullName>Pavan Mahajan</fullName>
+                <default>false</default>
+                <label>Pavan Mahajan</label>
+            </value>
+            <value>
+                <fullName>Gautam Damahe</fullName>
+                <default>false</default>
+                <label>Gautam Damahe</label>
+            </value>
+            <value>
+                <fullName>Rushikesh Koli</fullName>
+                <default>false</default>
+                <label>Rushikesh Koli</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

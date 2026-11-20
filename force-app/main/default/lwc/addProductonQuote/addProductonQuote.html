@@ -1,0 +1,94 @@
+<template>
+    <lightning-card >
+        <div class="slds-text-align_center slds-p-vertical_small slds-border_bottom">
+            <h1 class="slds-text-heading_medium slds-text-title_bold">
+                Add Product
+            </h1>
+        </div>
+
+        <div class="slds-p-around_small">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Product</th>
+                        <th>RECD Sr No.</th>
+                        <th>Service Year</th>
+                        <th style="width: 151px;">List Price</th>
+                        <th> Discount %</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <template for:each={rows} for:item="row" for:index="index">
+                        <tr key={row.assetId}>
+                            <td>
+                                <lightning-input
+                                    type="checkbox"
+                                    data-index={index}
+                                    checked={row.selected}
+                                    onchange={handleSelect}>
+                                </lightning-input>
+                            </td>
+
+                            <td class="slds-cell-wrap">{row.productName}</td>
+
+                            <td>{row.service}</td>
+
+                            <td>
+                                <lightning-combobox
+                                    data-index={index}
+                                    value={row.serviceYear}
+                                    options={serviceYearOptions}
+                                    disabled={row.disablePrice}
+                                    variant="label-hidden"
+                                    dropdown-alignment="auto"
+                                    placeholder="Select Year"
+                                    onchange={handleServiceYearChange}>
+                                </lightning-combobox>
+                            </td>
+
+                            <td>
+                                <lightning-input
+                                    type="number"
+                                    data-index={index}
+                                    value={row.price}
+                                    disabled={row.disablePrice}
+                                    variant="label-hidden"
+                                    onchange={handlePriceChange}>
+                                </lightning-input>
+                            </td>
+
+                            <td>
+                                <lightning-input
+                                    type="percentage"
+                                    data-index={index}
+                                    value={row.discount}
+                                    disabled={row.disableDiscount}
+                                    variant="label-hidden"
+                                    onchange={handleDiscountChange}>
+                                </lightning-input>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+
+            <div class="slds-m-top_medium slds-grid slds-gutters slds-grid_align-end">
+                <lightning-button
+                    variant="brand"
+                    label="Add Selected Products"
+                    onclick={handleSave}>
+                </lightning-button>
+
+                <lightning-button
+                    class="slds-m-left_medium slds-m-right_medium"
+                    variant="brand"
+                    label="Cancel"
+                    onclick={handleCancel}>
+                </lightning-button>
+            </div>
+        </div>
+
+    </lightning-card>
+</template>

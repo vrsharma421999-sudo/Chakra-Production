@@ -1,0 +1,539 @@
+<apex:page standardController="Quote" extensions="SalesQuoteController"  renderAs="pdf"  standardStylesheets="false" applyHtmlTag="false" showHeader="false">
+    
+    <head>
+        <style type="text/css">
+            @page {
+            size: A4;
+            border: 1px solid black;
+            padding-left:10px;
+            margin-bottom: 35mm;
+            margin-top: 30mm;
+            @top-center {
+            content: element(header);
+            }
+            @bottom-center {
+            content: element(footer);
+            }
+            }
+            div.header {
+            padding: 10px;
+            position: running(header);
+            }
+            div.footer {
+            display: block;
+            padding: 5px;
+            position: running(footer);
+            }
+            table td {
+            padding: 1;
+            border-collapse:collapse;
+            }
+            
+            table.tmain{
+            -fs-table-paginate: paginate;
+            border-collapse:collapse;
+            border-spacing: 0;
+            }
+            table, tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+            
+            table tr{
+            page-break-inside:avoid;
+            }
+            
+            ol.inner-list {
+            list-style-type: lower-alpha; /* Changes to a, b, c... */
+            }
+        </style>
+    </head>
+    <div class="header">
+        <table style="border-bottom:1px solid black;" width="100%">
+            <tr>
+                <!-- border-bottom:1px solid black; -->
+                <td style="text-align:left;"><strong> <apex:image value="{!$Resource.Chakra3}" width="100px"/></strong></td>
+                <td width="50%" style="text-align:center;font-size:28px;font-family: sans-serif,arial;">
+                    <b>Sales Quotation
+                        <br/> {!Quote.QuoteNumber}</b>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <table  width="100%" style="font-family: sans-serif;">
+            <tr>
+                <td style="text-center: left;font-size:11px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    *****This is computer generated quotation; no signature is required*****
+                    <br/><br/><br/><br/> <span style="text-align: center;"> <br/><br/><br/></span>
+                    <!-- <pre style="font-family: sans-serif,arial;font-size:11px;"> Authorised Signatory </pre> -->
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <br/>
+    <table style="border-bottom:1px solid black;font-family:sans-serif;" width="100%">
+        <tr>
+            <td width="33%"></td>
+            <td width="33%"></td>
+            <td width="34%"></td>
+        </tr>
+        <tr>
+            <!-- <td style="padding-left:10px;border-right:2px solid #ccc;font-size:12px;font-family:sans-serif;"><b>Supplier Details</b>
+                <br/> <span style="font-size:10px;font-family:sans-serif;"><b> CHAKR INNOVATION PVT. LTD.</b></span>
+                <br/>
+                <span style="font-size:10px;font-family:sans-serif;">Survey No 236, Hissa No 7 &amp; Survey No <br/>
+                    237 Taluka Muslhi,<br/>
+                    Hinjewadi , Phase 1 Pune (Maharashtra -<br/>
+                    27)
+                    Pune (Maharashtra - 27)<br/>
+                    India - 411057 
+                    <br/><b>Contact Person</b>: Sales Insight
+                    <br/><b>Email</b>:sales.insight@chakr.in
+                    <br/><b>Contact No</b>:  +91-9810931077
+                    <br/><b>GSTIN</b>: 27AAGCC5131K1ZN
+                    
+                </span>
+                
+            </td> -->
+            <!-- Supplier address dynamic Binding by Vanshika 02/09/2026 -->
+
+            <td style="padding-left:10px;border-right:2px solid #ccc;font-size:12px;font-family:sans-serif;"><b>Supplier Details</b>
+                <br/> <span style="font-size:10px;font-family:sans-serif;"><b>{!Quote.Supplier_Company_Name__c}</b></span>
+                <br/>
+                <span style="font-size:10px;font-family:sans-serif;">
+                    {!Quote.Supplier_Street__c}<br/>
+                    <apex:outputText value="{!Quote.Supplier_City_State_Zip__c}<br/>" rendered="{!NOT(ISBLANK(Quote.Supplier_City_State_Zip__c))}" escape="false"/>
+                    <br/><b>Contact Person</b>: Sales Insight
+                    <br/><b>Email</b>: sales.insight@chakr.in
+                    <br/><b>Contact No</b>: +91-9810931077
+                    <br/><b>GSTIN</b>: {!Quote.Supplier_GSTIN__c}
+                </span>
+            </td>
+            <td style="padding-left:5px;border-right:2px solid #ccc;vertical-align:top;font-size:12px"><b>Buyer Details</b>
+                <br/> <span style="font-size:10px;font-family:sans-serif;"><b>{!Quote.Opportunity.Billing_Addresses__r.Name}</b></span>
+                <br/>
+                <span style="font-size:10px;font-family:sans-serif;">{!Quote.Opportunity.Billing_Addresses__r.Street__c}<br/>
+                    {!Quote.Opportunity.Billing_Addresses__r.City__c},<br/>
+                    {!Quote.Opportunity.Billing_Addresses__r.State__c}
+                    <br/>
+                    {!Quote.Opportunity.Billing_Addresses__r.Country__c} - {!Quote.Opportunity.Billing_Addresses__r.Zip_Postal_Code__c}
+                    <br/><b>Place of supply :</b>{!Quote.Account.Place_of_Supply__c}
+                    <br/><b>GSTIN</b>: {!Quote.Opportunity.Billing_Addresses__r.GST__c}
+                </span>
+                
+            </td>
+            <td style="padding-left:5px;vertical-align:top;font-size:12px"><b>Delivery Location</b>
+                <br/> <span style="font-size:10px;"><b>{!Quote.Opportunity.Shipping_Address__r.Name}</b></span>
+                <br/>
+                <span style="font-size:10px;">{!Quote.Opportunity.Shipping_Address__r.Street__c}<br/>
+                    {!Quote.Opportunity.Shipping_Address__r.City__c},<br/>
+                    {!Quote.Opportunity.Shipping_Address__r.State__c}
+                    <br/>
+                    {!Quote.Opportunity.Shipping_Address__r.Country__c}-{!Quote.Opportunity.Shipping_Address__r.Zip_Postal_Code__c}
+                </span>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" style="font-family:sans-serif;">
+        <tr>
+            <td width="20%"></td>
+            <td width="30%"></td>
+            <td width="15%"></td>
+            <td width="35%"></td>
+        </tr>
+        <tr> <td style="font-size:12px;font-family: sans-serif,arial;text-align:center;border-top:1px solid" colspan="4"> <b>SQ Details</b></td>
+        </tr>
+        
+        <tr> <td colspan="4"> &nbsp;</td>
+            
+        </tr>
+        <tr>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b>SQ Number</b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;">{!Quote.QuoteNumber} </td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b>SQ Date</b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;">
+                <!-- <apex:outputText value="{0,date,dd/MM/yy}">
+                <apex:param value="{!Quote.CreatedDate}"/>
+                </apex:outputText> -->
+                <apex:outputText value="{0,date,dd/MM/yy}">
+                    <apex:param value="{!Today}" />
+                </apex:outputText>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b>Enquiry No</b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;">{!Quote.OpportunityId}</td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b>Enquiry Date</b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;">
+                <apex:outputText value="{0,date,dd/MM/yy}">
+                    <apex:param value="{!Quote.Opportunity.Date_of_Proposal__c}"/>
+                </apex:outputText>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b>No of Items</b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;">{!noOfItem }</td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b>Amount</b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;">Rs
+                <apex:outputText value="{0, number, ###,###,###,###}"><apex:param value="{!Quote.Total_Amount__c}"/></apex:outputText>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b> Manager </b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;">{!Quote.Opportunity.Owner.Name} </td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b>Manager Email :</b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"> {!Quote.Opportunity.Owner.Email} </td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"><b></b></td>
+            <td style="font-size:10px;font-family: sans-serif,arial;text-align:left;"></td>
+        </tr>    
+    </table>
+    <br/>
+    <table width="100%" style="border-collapse: collapse;font-family:sans-serif;">
+        <tr>
+            <td width="2%"></td>
+            <td width="25%"></td>
+            <td width="10%"></td>
+            <td width="8%"></td>
+            <td width="12%"></td>
+            <td width="11%"></td>
+            <td width="6%"></td>
+            <td width="10%"></td>
+            <td width="12%"></td>
+        </tr>
+        <thead>
+            <tr>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;" rowspan="2"> <b>#</b></td>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" rowspan="2"> <b>Description</b></td>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" rowspan="2"> <b>HSN/SAC Code </b></td>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" rowspan="2"> <b>Quantity</b></td>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" rowspan="2"> <b>List Price</b></td>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" rowspan="2"> <b>Discounted Price</b></td>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" colspan="2"> <b>GST</b></td>
+                <td style="border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" rowspan="2"> <b>Total </b></td>
+            </tr>
+            <tr>
+                <td style="font-size:12px;"><b>Rate</b></td>
+                <td style="font-size:12px;"><b>Amount</b></td>
+            </tr>
+        </thead>
+        <!--<tr>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;" > 1</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;" > 
+        Chakr Shield 2.0<br/>
+        <span style="font-size:10px;"> <b>Item Id:</b> CKRSLD2.0-380kVA-M2 </span>
+        </td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 84041000 </td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 3.00</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > NOS</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" >70066666 </td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 400</td>
+        <td style="border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 18%</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;"> </td>
+        <td style="border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 110066666</td>
+        </tr>
+        <tr>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;" > 2</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;" > 
+        Installation  Commissioning<br/>
+        <span style="font-size:10px;"> <b>Item Id:</b>  InC-380KVA </span>
+        </td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 998732 </td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 3.00</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > NOS</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > </td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > </td>
+        <td style="border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > 18%</td>
+        <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;"> </td>
+        <td style="border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > </td>
+        </tr>-->
+        <apex:repeat value="{!lstWrap}" var="l">
+            
+            <tr>
+                <td style="width:20px; border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;border-bottom:1px solid #c8c8c8;font-size:12px;" > {!l.sno}</td>
+                <td style="border-right:2px solid #c8c8c8;border-top:1px solid#c8c8c8;border-bottom:1px solid #c8c8c8;font-size:12px;padding:5px" > 
+                    {!l.qline.Product2.Name}<br/>
+                    <span style="font-size:10px;"> <b>Item Id :</b>{!l.qline.Product2.Item_Id__c}<br/>
+                        <b>DG Make :</b>{!l.qline.DG_Make__c}
+                    </span>
+                </td>
+                <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > {!l.qline.Product2.HSN_SAC_Code__c}</td>
+                <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" > {!l.qline.Quantity} </td>
+                <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" >
+                    <!-- <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!l.qline.Subtotal}"/></apex:outputText> -->
+                    {!l.qline.UnitPrice}
+                </td>
+                <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;" >
+                    <!-- <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!l.TaxableAmount }"/></apex:outputText> -->
+                    <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!l.discountOnUnitPrice1}"/></apex:outputText>
+                </td>
+                <td style="border-top:1px solid#c8c8c8;border-bottom:1px solid #c8c8c8;font-size:12px;text-align: center;" > {!l.qline.GST_Rate__c}%</td>
+                <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:12px;text-align: center;">
+                    <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!l.qline.GST_Amount_1__c}"/></apex:outputText>
+                </td>
+                <td style="border-top:1px solid#c8c8c8;font-size:12px;text-align: center;border-bottom:1px solid #c8c8c8;" >
+                    <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!l.TotalAmount}"/></apex:outputText>
+                </td>
+            </tr>
+            <apex:outputtext rendered="{!if((l.sno == 6), true ,false)}">   
+                <div style="page-break-after:always;"></div>
+                <tr>
+                    <td width="2%"></td>
+                    <td width="25%"></td>
+                    <td width="10%"></td>
+                    <td width="8%"></td>
+                    <td width="12%"></td>
+                    <td width="11%"></td>
+                    <td width="6%"></td>
+                    <td width="10%"></td>
+                    <td width="12%"></td>
+                </tr>
+            </apex:outputtext>
+            <apex:outputtext rendered="{!if((l.sno == 20), true ,false)}">   
+                <div style="page-break-after:always;"></div>
+                <tr>
+                    <td width="2%"></td>
+                    <td width="25%"></td>
+                    <td width="10%"></td>
+                    <td width="8%"></td>
+                    <td width="12%"></td>
+                    <td width="11%"></td>
+                    <td width="6%"></td>
+                    <td width="10%"></td>
+                    <td width="12%"></td>
+                </tr>
+            </apex:outputtext>
+        </apex:repeat>
+    </table>
+    <br/>
+    
+    <table width="100%"> 
+        <tr>
+            <td width="70%" ></td>
+            <td width="30%"></td>
+        </tr>
+        
+        <tr>
+            <td style="font-size:11px;"> <b>SQ Amount :{!AmountInWord}</b></td>
+            <td style="text-align: left;font-size:12px;"><b>Total Taxable Amount : <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!Quote.TotalPrice}"/></apex:outputText></b></td>
+        </tr>
+        <tr>
+            <td style="text-align: left;font-size:10px;vertical-align:top;"><br/><b></b></td>
+            <td style="text-align: left">
+                <table width="100%" style="border-collapse: collapse; collapse; font-size:11px;font-family: sans-serif,arial;">     
+                    <tr>
+                        <td width="50%" ></td>
+                        <td width="50%"></td>
+                    </tr>    
+                    <tr>
+                        <td><b>Total Tax : </b></td>
+                        <td><b><apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!Quote.Total_GST_Amount__c}"/></apex:outputText></b></td>
+                    </tr>  
+                    <tr>
+                        <td><b>Total (after tax) : </b></td>
+                        <td><b><apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!Quote.TotalPrice + Quote.Total_GST_Amount__c}"/></apex:outputText></b></td>
+                    </tr>  
+                    <tr>
+                        <td><b>Grand Total : </b></td>
+                        <td><b><apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!Quote.TotalPrice + Quote.Total_GST_Amount__c}"/></apex:outputText></b></td>
+                    </tr>     
+                    <!--<tr>
+                    <td style="border-right:2px solid #c8c8c8;border-left:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13px;text-align: center;font-family: sans-serif,arial;font-size:11px;padding:5px"><b>CGST</b></td>
+                    <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13px;text-align: center;font-family: sans-serif,arial;font-size:11px;padding:5px"><b>SGST</b></td>
+                    <td width="30%" style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13px;text-align: center;font-family: sans-serif,arial;font-size:11px;padding:5px"><b>IGST</b></td>
+                    <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13x;text-align: center;font-family: sans-serif,arial;font-size:11px;padding:5px"><b>Cess</b></td>
+                    </tr>
+                    <tr>
+                    <td style="border-right:2px solid #c8c8c8;border-left:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13px;text-align: center;padding:5px">0.00</td>
+                    <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13px;text-align: center;padding:5px">0.00</td>
+                    <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13px;text-align: center;padding:5px"></td>
+                    <td style="border-right:2px solid #c8c8c8;border-bottom:1px solid #c8c8c8;border-top:1px solid#c8c8c8;font-size:13px;text-align: center;padding:5px">0.00</td>
+                    </tr>-->
+                                        <!--      <pre style="font-size:11px;font-family: sans-serif,arial;">  
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Tax : <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!Quote.Total_GST_Amount__c}"/></apex:outputText> </b>  
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;Total (after tax) : <apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!Quote.TotalPrice + Quote.Total_GST_Amount__c}"/></apex:outputText></b>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grand Total :<apex:outputText value="{0, number, ###,###,###,###}">Rs<apex:param value="{!Quote.TotalPrice + Quote.Total_GST_Amount__c}"/></apex:outputText> </b>
+                    </pre>
+                    -->
+                </table>
+            </td>
+        </tr> 
+    </table>
+    
+    <apex:repeat value="{!lstWrap}" var="l">
+        <apex:outputtext rendered="{!if((l.sno > 20), true ,false)}">   
+            <!-- <div style="page-break-after:always;"></div>  -->   
+        </apex:outputtext>
+    </apex:repeat>
+    
+    <apex:repeat value="{!lstWrap}" var="l">
+        <apex:outputtext rendered="{!if((l.sno > 21), true ,false)}">   
+            <!-- <div style="page-break-after:always;"></div> -->
+        </apex:outputtext>
+    </apex:repeat>
+    
+    <apex:repeat value="{!lstWrap}" var="l">
+        <apex:outputtext rendered="{!if((l.sno > 22), true ,false)}">   
+            <!-- <div style="page-break-after:always;"></div> -->
+        </apex:outputtext>
+    </apex:repeat>
+    
+    <apex:repeat value="{!lstWrap}" var="l">
+        <apex:outputtext rendered="{!if((l.sno > 23), true ,false)}">   
+            <!-- <div style="page-break-after:always;"></div> -->
+        </apex:outputtext>
+    </apex:repeat>
+    
+    <apex:repeat value="{!lstWrap}" var="l">
+        <apex:outputtext rendered="{!if((l.sno > 24), true ,false)}">   
+            <!-- <div style="page-break-after:always;"></div>  --> 
+        </apex:outputtext>
+    </apex:repeat>
+    
+    <apex:repeat value="{!lstWrap}" var="l">
+        <apex:outputtext rendered="{!if((l.sno > 25), true ,false)}">   
+            <div style="page-break-after:always;"></div>
+        </apex:outputtext>
+    </apex:repeat>
+    
+    
+    
+    <!-- <div style="page-break-after:always;"></div> -->
+    <br/><span style="font-weight:bold; font-size:12px;font-family: sans-serif"> Comments : </span>
+    <br/><span style="font-size:11px;">  </span> 
+    <p><span style="font-family: sans-serif,arial;font-size:12px;font-weight:bold;">Payment Terms : </span><br/>
+        <span style="font-family: sans-serif,arial;font-size:11px;"><apex:outputText value="{!Quote.Payment__c}" style="white-space:pre;" escape="false"/></span>
+    </p>
+    <pre style="font-family: sans-serif,arial;font-size:12px;"> 
+<span style="font-weight:bold;">Confidential:</span><br/>
+This quote is confidential, for the attention of the addressee only. The information it contains should not be divulged to anyone
+else nor should be copied or delivered to a third party.
+</pre>
+    
+    <html>
+        <table width="100%">
+            <tr><td style="border-top:1px solid #c8c8c8;"></td></tr>
+        </table>
+        <span style="font-size:12px;font-family: sans-serif;font-weight:bold;"> General Scope of work </span>
+        <br/>
+        <apex:outputPanel rendered="{!Quote.Quotation_Type__c == 'Editable'}">
+           <!-- <span style="font-size:12px;font-family: sans-serif;">{!Quote.General_Scope_of_Work__c}</span> -->
+          <!--  <span style="font-size:12px;font-family: sans-serif;"><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<apex:outputText value="{!sow}" escape="false"/>
+            </span> -->
+            
+            <!-- <p style="padding-left:20px; font-size:12px; font-family:sans-serif;">
+                   <apex:outputText value="{!sow}" escape="false"/> 
+                </p> -->
+                <div style="padding-left:10px; font-size:12px; font-family:sans-serif;">
+                   <apex:repeat value="{!sowLines}" var="line">
+                        <div style="padding-bottom:4px;">
+                            <apex:outputText value="{!line}" escape="false" />
+                        </div>
+                    </apex:repeat>
+                </div>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!Quote.Quotation_Type__c == 'Standard'}">
+            <ol style="font-size:12px;font-family: sans-serif;">
+                <li>In case the existing foundation is found to be inadequate for RECD mounting, 
+                    any additional civil work or structural modifications required for proper installation 
+                    shall be under the Client’s scope.</li>
+                <li>Client should provide space for material storage once it is delivered on-site. </li>
+                <li>Client should have the necessary arrangements like scaffolding / ladder for accessibility
+                    of Retrofit Emission Control Device (RECD) during site mapping and maintenance.</li>
+                <li>Client shall provide the necessary DG shutdown during installation activities.
+                    A detailed shutdown   schedule and installation timeline will be shared by Chakr Innovation
+                    in advance. Any delay in providing the required shutdown may impact the overall project 
+                    completion timeline, for which Chakr Innovation shall not be held liable.</li>
+                <li>Client should provide Constructional power (240V AC supply) to enable 
+                    positional welding i.e., Welding will be done on the actual location.</li>
+                <li>Incoming cable &amp; Industrial power boards will be within the client's scope.
+                    Recommended specifications are as below: 
+                    <ol class="inner-list" style="font-size:12px;font-family: sans-serif;">
+                        <li>One 15A industrial power board with MCB near to 
+                            the Chakr Shield panel location which will receive power supply from grid/UPS.</li>
+                        <li>One 15A industrial power board with MCB near to the Chakr Shield panel
+                            location which will receive power supply from DG output. </li>
+                        <li>Recommended Cable size- 1.5 sq. mm three core flexible/armoured cable.</li>
+                    </ol>            
+                </li>
+                <li>Client should allow the Installation team to run DG on maximum load for
+                    at least 2 hrs at the time of testing. </li>
+                <li>Any Returnable Items, extra consumables, tools, and equipment used for installation,
+                    will be Chakr Innovation’s property and will be taken back after completion of installation. </li>
+                <li>Power requirement – 240V AC supply from mains will be required all the time even when DG is 
+                    not running. This is required to monitor the working of the automation system. </li>
+                <li>The device is covered under a warranty of 12 months from the date of commissioning,
+                    or 18 months from the date of delivery, whichever occurs earlier, as outlined in
+                    Point No. 4. Standard terms and conditions apply.</li>
+                <li>Unloading will be in Client's Scope. </li>
+                <li>All structural and installation drawings provided by Chakr Innovation are prepared
+                    in accordance with Chakr’s internal safety standards and norms. Should the client
+                    require any additional safety features, specifications, or modifications beyond these
+                    standards—including changes to access structures, protective enclosures, or materials—the
+                    same shall be executed upon request and will be chargeable separately </li>
+            </ol>
+        </apex:outputPanel>
+    </html>
+    <!--
+    <div style="white-space: pre-wrap; font-family: sans-serif, Arial; font-size: 12px;">
+    <apex:outputText escape="false" value="{!Quote.General_Scope_of_Work__c}" />
+    </div> -->
+    
+    <html>
+        <table width="100%">
+            <tr><td style="border-top:1px solid #c8c8c8;"></td></tr>
+        </table>
+        <span style="font-size:12px;font-family: sans-serif, Arial;font-weight:bold;"> Terms And Conditions: </span>
+        <br/>
+        <apex:outputPanel rendered="{!Quote.Quotation_Type__c == 'Editable'}">
+           <!-- <span style="font-size:12px;font-family: sans-serif;">{!Quote.Terms_And_Conditions__c}</span> -->
+           <!-- <span style="font-size:12px;font-family: sans-serif;">-->
+                
+                <!-- <p style="padding-left:20px; font-size:12px; font-family:sans-serif;">
+                   <apex:outputText value="{!tnC}" escape="false"/> 
+                </p> -->
+                <div style="padding-left:10px; font-size:12px; font-family:sans-serif;">
+                    <apex:repeat value="{!tnCLines}" var="line">
+                        <div style="padding-bottom:4px;">
+                            <apex:outputText value="{!line}" escape="false" />
+                        </div>
+                    </apex:repeat>
+                </div>
+          <!--  </span-->
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!Quote.Quotation_Type__c == 'Standard'}">
+            <ol style="font-size:12px;font-family: sans-serif;">
+                <li>Any delays in client approvals or clearances during the course of the project shall not be attributable to Chakr Innovation,
+                    and Chakr shall bear no liability for the resulting impact on timelines.</li>
+                <li> DG stack should be as per OEM standards i.e., stack back pressure at rated load should be less than 1kPA. In case of deviation,
+                    if required, the customer has to modify the stack as per Chakr recommendation. </li>
+                <li> To ensure optimal and continuous regeneration of the RECD system, Chakr Innovation recommends the following operational guidelines for DG sets:
+                    <ol class="inner-list" style="font-size:12px;font-family: sans-serif;">
+                        <li> If daily idling is practiced: Operate the DG set at above 40% load for a minimum of 2 hours over the course of a month.</li>
+                        <li> If daily idling is not practiced: Ensure the DG set operates at above 40% load for at least 20% of the total monthly runtime.</li>
+                    </ol>
+                    Note: These practices are not mandatory but essential to maintain the efficiency and longevity of the RECD system by supporting its continuous regeneration cycle.
+                </li>
+                <li>The Engine AMC must adhere to the respective OEM’s maintenance norms, and service reports for the past 
+                    two years must be provided to Chakr Innovation prior to installation. There should be no major pending issues,
+                    such as overdue C or D checks, injector faults, engine breakdowns, or any other significant engine-related concerns.
+                    Chakr Innovation shall not be held liable for any performance issues, damage, or failures arising in the RECD or 
+                    associated systems due to the ill health or improper maintenance of the DG set.</li>
+                <li>It is mandatory for the client to maintain an active Annual Maintenance Contract (AMC) for the RECD with Chakr Innovation during the entire warranty period and thereafter for continued support. In the absence of such an AMC, Chakr Innovation shall bear no responsibility for any equipment malfunction, performance degradation, or non-compliance with applicable emission norms or regulatory requirements. Any liabilities, penalties, or consequences arising due to lack of prescribed maintenance or non-compliance shall rest solely with the client.</li>
+                <li> Any modifications to the stack layout after commissioning of the RECD device should be consulted with Chakr Innovation Pvt. Ltd.</li>
+                <li> The silencer will be dismantled from the system and formally handed over to the client for safekeeping.</li>
+                <li> Back up DG, if required, will be provided by the client, whenever there will be constraints for providing the
+                    required shutdown as per shared installation requirements. Delays arising from the absence of such an
+                    arrangement shall not be attributable to Chakr Innovation</li>
+                <li> As per the above General Scope of Work, any modification required to accommodate the RECD device that 
+                    falls outside the agreed scope shall be in the Clients scope.</li>
+                <li> Use of CJ-4 grade lubrication oil and BSVI-compliant diesel fuel is to ensure performance and durability of the RECD system.</li>
+            </ol>
+        </apex:outputPanel>
+    </html>
+</apex:page>

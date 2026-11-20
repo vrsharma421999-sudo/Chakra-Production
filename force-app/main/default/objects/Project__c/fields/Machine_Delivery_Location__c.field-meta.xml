@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Machine_Delivery_Location__c</fullName>
+    <label>Machine Delivery Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client Site</fullName>
+                <default>false</default>
+                <label>Client Site</label>
+            </value>
+            <value>
+                <fullName>Chakr GGN plant</fullName>
+                <default>false</default>
+                <label>Chakr GGN plant</label>
+            </value>
+            <value>
+                <fullName>Chakr HO</fullName>
+                <default>false</default>
+                <label>Chakr HO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

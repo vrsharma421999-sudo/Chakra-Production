@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Validation_Stage_Design_Team</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Project_Status__c , &quot;Design_Team&quot;),
+    OR(
+        ISBLANK(End_Client_POC_Name__c),
+        ISBLANK(End_Client_POC__c),
+        ISBLANK(End_Client_POC_Email__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>Before moving the Project Status to &quot;Design Team&quot;, please fill in the following End Client details: POC Name, POC Contact Number, and POC Email.</errorMessage>
+</ValidationRule>

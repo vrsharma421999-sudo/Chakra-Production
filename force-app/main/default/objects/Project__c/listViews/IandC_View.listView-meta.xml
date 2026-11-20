@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IandC_View</fullName>
+    <columns>Project_Full_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Project_Status__c</columns>
+    <columns>RECD_Sr_No__c</columns>
+    <columns>Manufacturing_Location__c</columns>
+    <columns>Invoicing_Month__c</columns>
+    <columns>After_Delivery_Installation_Go_Ahead__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>I&amp;C View</label>
+</ListView>

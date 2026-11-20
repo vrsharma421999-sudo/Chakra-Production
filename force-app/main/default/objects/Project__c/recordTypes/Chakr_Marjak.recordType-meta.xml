@@ -1,0 +1,3483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chakr_Marjak</fullName>
+    <active>true</active>
+    <label>Chakr Marjak</label>
+    <picklistValues>
+        <picklist>Advance_Payment_Status__c</picklist>
+        <values>
+            <fullName>Advance Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Advance_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>After_Delivery_Installation_Go_Ahead__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Assigned_Installation_Engineer__c</picklist>
+        <values>
+            <fullName>Abhishek Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aditya Narkhedkar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajmer Hussian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akash Abhimanyu Bhosale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akash Narayan Pawar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anand Patel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ankit Jaiswal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ansul Jaryal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asheesh Mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashish Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashutosh Mehta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brijendra Kumar Mathur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chandan Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deepjyoti Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dileep Kumar Chaudhary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fazil Khan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gulshan Dubey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gurpreet Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUSEN ILAI FAKIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Himanshu Sharma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jatin Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joginder Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junaid Ahemad Jamal Ahemad Sayyed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maruti Sudam Korhale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naresh Kumar Pipal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Navin Bhardwaj</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noorullah Shariff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pasupuleti Sai Ranjith</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pradeep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puneet Malhotra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rajesh Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rajit Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rakesh Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ranjit Babu B G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santhosh B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sasikumar B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saumendra Kundu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shiv Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sopan Patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subhash Sirohi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surya pratap Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thirumurugan K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vignesh S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vikas Kulkarni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vikrant Kumar Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vipul Chauhan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yadav Raghuvir Raghuvir</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Assigned_Installation_Manager__c</picklist>
+        <values>
+            <fullName>Ashutosh Mehta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assignment Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Nitin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rugved Vijay Rane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saumendra Kundu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selva</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Assigned_Installation_Vendor_Manager__c</picklist>
+        <values>
+            <fullName>Abhishek Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anuj Sangwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assignment Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Assigned_Installation_Vendor__c</picklist>
+        <values>
+            <fullName>AK Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AP Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anurag Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Axiss control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bhoomi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blessy Warehouse and Logistics Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divyansh Engineering Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EKANSH ENTERPRISES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELECTECH SOLUTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENVIRO COMFORT SERVICES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erecto Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erode Talent Traders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fruken Fasteners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gayatri Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gayatri Insulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georson Tech Private Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gronotech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gurudeva Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H N Contractor and Fabricator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIBATECH ENGINEERING INDUSTRIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JMD Energy Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KRISHNA ENTERPRISES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lotus Enviro Systems Private Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mahi Erectors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maurya Interiors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microtech Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mithra Insulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBS Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEWCON CONSULTANTS AND LABORATORIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NaitikSai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMKAR TECH POWER SERVICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offset Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUNJIRA INFRAPROJECTS LLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renuka Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rion Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S A Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Enviro Services Pvt Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHRI LAKSHMI TRADERS %26 ENGG%2E CORPORATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNEHA HI-TECH PRODUCTS %26 SNEHA TEST HOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUBHASH INSULATION WORKS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saafi Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satyam Power Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shraddha Fabrication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shri Krishna Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shri Shyam Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Star Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Starfoils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudhir Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TMS Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thinkcotech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Triratna Power Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAT Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VDS Udyog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaibhav Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Velavan Insulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vishnu Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YMK Power solution</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Attendance_Maintainance__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>C2_Status__c</picklist>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPCBI_II__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-CPCB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CR_Signed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>C_2_Release_Status__c</picklist>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Released</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cladding_Status__c</picklist>
+        <values>
+            <fullName>Cladding not to be done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ongoing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cladding_Vendor__c</picklist>
+        <values>
+            <fullName>Ambey Insulations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anurag Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assignment Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divyansh Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ekansh Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gayatri Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gurudeva Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JMD Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mitra Insulations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramling Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shri Gayatri Insulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subhash Insulations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Velavan Insulations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vishnu Enterprises</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Communication__c</picklist>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending from Sales end</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_GAD_Approval_Receipt_Date__c</picklist>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Required_Civil_Foundation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commissioning_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cost_Center__c</picklist>
+        <values>
+            <fullName>I will add numbers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Inventory_Availability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DG_Make__c</picklist>
+        <values>
+            <fullName>Ashok Leyland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baudouin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caterpillar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crompton Greaves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cummins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cummins-Jackson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cummins-Powerica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cummins-Sudhir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detroit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eicher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greaves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HARISON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kirloskar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kohler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mahindra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mitshubishi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perkins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sterling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volvo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wartsila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yamaha</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DOFF__c</picklist>
+        <values>
+            <fullName>Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivered_Location_P_S__c</picklist>
+        <values>
+            <fullName>Client Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GGN Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNQ Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Design_ModelCheckbox__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ongoing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Design_Release_Stage__c</picklist>
+        <values>
+            <fullName>ALD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAD Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Going</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>TFR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Design_Updated_By__c</picklist>
+        <values>
+            <fullName>Gautam Damahe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavan Mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pratik G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rushi R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rushikesh Koli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Someshwar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sumit M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tejpal Bansod</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dispatch_Clearance_based_on_Pre_dispatch__c</picklist>
+        <values>
+            <fullName>Dispatch Payment Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doff_Design_Updated_by__c</picklist>
+        <values>
+            <fullName>Gaurang Raut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gosavi Someshwar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harshal Chaudhari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harshal Gopichand Patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayant Bhavsar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FEA_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FG_Dropdown__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STPO Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FG__c</picklist>
+        <values>
+            <fullName>DFG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Field_QC_Engineer__c</picklist>
+        <values>
+            <fullName>Dhananjay Upadhyayay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hagavane Mahesh Sampat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mahesh Arumugam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narendra Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neerathilingam N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raushan Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SREENIVASANAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Payment_Status__c</picklist>
+        <values>
+            <fullName>Final Payment Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Status_SCM__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed - Piping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed - Structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GAD_Shared_to_Client__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GA_Drawing_Release_Stage__c</picklist>
+        <values>
+            <fullName>ALD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAD Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Going</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TFR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IBOM_Status__c</picklist>
+        <values>
+            <fullName>Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation_Scope__c</picklist>
+        <values>
+            <fullName>Chakr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Installation_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Not In Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Going</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Internal_Quality_Approved_Status__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Internal_Quality_Status_P_S__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not offered to Quality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Internal_Quality_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Stage__c</picklist>
+        <values>
+            <fullName>Budget %26 Payment Approval - DRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEPOT Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEPOT SSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Verification - DRM Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing %26 Release - DRM Office</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoicing_Month__c</picklist>
+        <values>
+            <fullName>Apr%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apr%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aug%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aug%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dec%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dec%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feb%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feb%2727</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jan%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jan%2727</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jul%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jul%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jun%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jun%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mar%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mar%2727</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>May%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nov%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nov%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oct%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oct%2726</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sep%2725</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sept%2726</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoicing_Request_Sent_by_PM__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inward_Quality_Status__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MFG_Clearance_on_Advance_Receipt__c</picklist>
+        <values>
+            <fullName>Advance NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Payment Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Machine_Assembly_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Machine_Delivery_Location__c</picklist>
+        <values>
+            <fullName>Chakr GGN plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chakr HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Site</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Machine_PO_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Machine_Status__c</picklist>
+        <values>
+            <fullName>Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Dispatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Quality Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Manpower_Compliances_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Manufacturing_Location__c</picklist>
+        <values>
+            <fullName>GGN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GGN%2BPNQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_Received_Date_GRN__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mfg_Approval__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NABL_Remarks__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NABL_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ongoing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NABL_Vendor__c</picklist>
+        <values>
+            <fullName>ABC Techno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABS Enviro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assignment Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goldfinch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lotus Enviro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newcon Cons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Enviro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name_ofDesign__c</picklist>
+        <values>
+            <fullName>AKSHAY KHAPRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANIKET RAMESH CHANDANSHIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abhay Pandey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajay Prakashrao Gawande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajay gawande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akshay khapare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anand Vitthal Chavan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anand chavan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aniket chandanshive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aniket gajghate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AnkitKumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashish Pandey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bharathi Raja N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devanand Kalsait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fahim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ganesh Gore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ganesh babar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ganesh kadam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurang raut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav Shubhas Gawali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav gawali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gautam damahe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gautam%C2%A0 %C2%A0Damahe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harshal Chaudhari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harshal patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayant Bhavsar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayant bavskar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeetu Rathore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laukik Fegade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mukesh Dive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nadeem%C2%A0 %C2%A0Naikwadi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namshad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onkar Shrivastav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pankaj Manohar Gawai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pankaj gawai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavan mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavan patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavan vilas Patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pranit Gore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad Ajay Patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad Akolakar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad Akolkar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pratik patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ritesh mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roopesh Panchal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rushikesh Rajput</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rushikesh koli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOMESHWAR GOSAVI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUMIT MULAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sachin Pomaje</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandesh Mallikarjun Swami</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanket thite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sayaji Bhosle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shekhar Dubey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shivam Upadhyay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham Bapu Pawar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham Sinare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham pawar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swapnil Prakash Mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swapnil mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tejpal bansod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijay Lohakre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijay lokare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vikas Kulal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name_of_Design_Engineer_Inhouse__c</picklist>
+        <values>
+            <fullName>ANIKET%2EC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abhay Pandey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajay G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akshay K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anand C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aniket Gajghate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ankit Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BY-VENDOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bharathi Raja N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAHIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GOPAL%2EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav Shubhas Gawali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gautam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HARSHAL%2EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harshal Chaudhari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayant B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laukik Fegade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NAKUL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nadeem   Naikwadi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onkar Shrivastav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAVAN%2EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRANIT G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRATIKSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pankaj</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavan M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad Ajay Patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RITESH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RUSHIKESH KOLI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rushi R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUMIT MULAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham Bapu Pawar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham Sinare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Someshwar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swapnil M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tejpal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijay Lohakre</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name_of_Design_QC_Lead__c</picklist>
+        <values>
+            <fullName>Anand C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dattatray Sutar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayant B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rushi R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tejpal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name_of_Desing_Vendor_Outsource__c</picklist>
+        <values>
+            <fullName>HARPHOOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HITAAZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inhouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Krishna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBDC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samyantra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shewale Industries</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name_of_SiteManager__c</picklist>
+        <values>
+            <fullName>Abhay Pandey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abhishek Gulani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajay gawande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akshay khapare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anand chavan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aniket chandanshive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aniket gajghate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ankur Pandey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ankush Yadav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arun Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arun Pathak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashish Kakran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashish Mishra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashish Pandey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bharthi Raja N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chandralok Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devanand Kalsait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divank Choudhary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fahim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ganesh Gore%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ganesh babar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ganesh kadam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurang raut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav gawali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gautam damahe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harshal patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jay Kishan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayant bavskar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeetu Rathore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mihir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E Dattatray Sutar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E Sachin Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mukesh Dive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nadeem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namshad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neeraj Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pankaj gawai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavan mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavan patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pramod Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pranit Gore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad Akolakar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pratik patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pruthviraj Patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rahul Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ritesh mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rohit Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roopesh Panchal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rushikesh koli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sachin Pomaje</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandesh Mallikarjun Swami</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanket thite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sayaji Bhosle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shekhar Dubey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shivam Upadhyay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham pawar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sopan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supendra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swapnil mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Talib</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tejpal bansod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijay Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijay lokare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vikas Kulal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vineet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinod Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vishal Sharma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vishwajeet Mane</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name_of_Site_Model_QC__c</picklist>
+        <values>
+            <fullName>Abhay Pandey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aniket Chandanshive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dattatray Sutar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav Shubhash gawali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAVAN VILAS PATIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prasad Patil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham Pawar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OTD_Comment__c</picklist>
+        <values>
+            <fullName>Capacity Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Flow Stuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Delay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outsource_Vendor_Name__c</picklist>
+        <values>
+            <fullName>Thinkcotech</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PDI_Applicable__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PDI_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PMO_Clearence_for_Dispatch__c</picklist>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>P_S_Dispatch_Status__c</picklist>
+        <values>
+            <fullName>Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>P_S_MFG_Type__c</picklist>
+        <values>
+            <fullName>In House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P%26S Outsourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>P_S_Mfg_Approval__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>P_S_Status__c</picklist>
+        <values>
+            <fullName>Manufacturing Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Dispatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Quality Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Panel_Avaliability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Panel_Status__c</picklist>
+        <values>
+            <fullName>Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Panel_Type__c</picklist>
+        <values>
+            <fullName>Regular Panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Panel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Panel_Vendor__c</picklist>
+        <values>
+            <fullName>Gentle</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Performance_status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Piping_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Post_Delivery_Payment_Status__c</picklist>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pre_Dispatch_Approval_del__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pre_Dispatch_Quality_Status__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prod__c</picklist>
+        <values>
+            <fullName>ASG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CQM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chakr Marjak - Suction Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DFK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DeNOx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EWQMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LDO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine RECD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECD</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rail Scooter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substrate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Track Machine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Production_Remarks__c</picklist>
+        <values>
+            <fullName>BOX NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cladding Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose mtr NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%2FC PARTS Not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Assy%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Cladding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Fabrication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Laser Cutting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Packing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substrate NA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Accepted__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Execution_Status__c</picklist>
+        <values>
+            <fullName>CANCELLED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIVE</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Status_SCM__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Despatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to Start</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Status__c</picklist>
+        <values>
+            <fullName>Collection Milestone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Team - Pre Dispatch</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Installation and Commissioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPC and Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project %26 Commissioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCM - Inventory Mgmt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stores %26 Logistics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QC_status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RECDMfgCompleted__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ongoing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RECDMfgStart__c</picklist>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RECD_MGF_Outsource_Vendor__c</picklist>
+        <values>
+            <fullName>Bhoomi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>From GGN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>From PNQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jindal Lifestyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metafold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orritech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RECD_M__c</picklist>
+        <values>
+            <fullName>Inhouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsource</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RECD_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SNAG__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SR_Pack_Updated_By__c</picklist>
+        <values>
+            <fullName>Akshay Khapare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shrenik Rajendra Sonule</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SR_pack_status__c</picklist>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shed_Modification_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_MappingChekbox__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DG is not available at the Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold due to DG shifted by the Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold due to Insufficient Balance in MMT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold from Client End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold from Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold from PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold from Sales due to Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OC mail generated%2C pending from the Design end</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ongoing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remapping required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Mapping completed but OC mail not generated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_Readiness_Remarks__c</picklist>
+        <values>
+            <fullName>Additional work scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Group order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mapping issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Civil Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No scope clarity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shed height issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shortage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shutdown issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unload damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong unload</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_Readiness_Status__c</picklist>
+        <values>
+            <fullName>Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onhold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_Type__c</picklist>
+        <values>
+            <fullName>Complicated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inhouse complicated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out complicated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Structure_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Substrate_Availability__c</picklist>
+        <values>
+            <fullName>Not Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supplier_Name__c</picklist>
+        <values>
+            <fullName>APRAR INDIA PRIVATE LIMITED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aditya Automotive Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aditya Sales House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asiad Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excelerate Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ferrum Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fusion Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSH Technomotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jaycee AutoFab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jindal Lifestyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microtech Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narwar Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ovi Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pioneer Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ratna Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Royal Pipe Fittings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S%2EV Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SURICH INDUSTRIES LLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sankalp Steeltech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shivam Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shree Siddhivinayak Industrial Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shri Ram Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surfcoatech Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Techspeq Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venus Pipe Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vidhya Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vishal Rubber technologies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TA_NON_TA__c</picklist>
+        <values>
+            <fullName>Non TA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TFR_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Updated_B__c</picklist>
+        <values>
+            <fullName>Akshay Khapare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onkar Srivastava</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shashi Shekhar Kumar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vendor_Name__c</picklist>
+        <values>
+            <fullName>AV Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jindal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Narwar Engineering</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2nd_GAD_Released__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

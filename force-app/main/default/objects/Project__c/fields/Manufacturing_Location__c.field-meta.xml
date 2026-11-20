@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manufacturing_Location__c</fullName>
+    <label>Manufacturing Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>GGN</fullName>
+                <default>false</default>
+                <label>GGN</label>
+            </value>
+            <value>
+                <fullName>GGN+PNQ</fullName>
+                <default>false</default>
+                <label>GGN+PNQ</label>
+            </value>
+            <value>
+                <fullName>PNQ</fullName>
+                <default>false</default>
+                <label>PNQ</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

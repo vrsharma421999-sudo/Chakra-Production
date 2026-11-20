@@ -1,0 +1,455 @@
+<apex:page showHeader="false"
+           sidebar="false"
+           standardStylesheets="false"
+           renderAs="pdf"
+           applyHtmlTag="false"
+           applyBodyTag="false" standardController="Quote" extensions="RentalBudgetaryPdfController">
+    
+    <html>
+        <head>
+            <style>
+                
+                @page{
+                size:A4;
+                margin:10mm;
+                }
+                
+                body{
+                font-family: Cambria, Arial;
+                font-size:10pt;
+                color:#000000;
+                }
+                
+                .mainTable{
+                width:100%;
+                border-collapse:collapse;
+                }
+                
+                .heading{
+                color:#2F5597;
+                font-weight:bold;
+                font-size:16px;
+                text-align:center;
+                }
+                
+                .subHeading{
+                text-align:center;
+                font-weight:bold;
+                font-size:13px;
+                }
+                
+                .sectionHeader{
+                color:#4472C4;
+                font-weight:bold;
+                font-size:13pt;
+                margin-top:10px;
+                margin-bottom:4px;
+                }
+                
+                .grid{
+                width:100%;
+                border-collapse:collapse;
+                }
+                
+                .grid th{
+                border:1px solid black;
+                padding:3px;
+                font-size:9pt;
+                font-weight:bold;
+                text-align:left;
+                }
+                
+                .grid td{
+                border:1px solid black;
+                padding:3px;
+                font-size:9pt;
+                vertical-align:top;
+                }
+                
+                .smallText{
+                font-size:9pt;
+                }
+                
+            </style>
+        </head>
+        
+        <body>
+            
+            <!-- HEADER -->
+            
+            <table width="100%">
+                <tr>
+                    
+                    <td width="25%">
+                        <img src="{!$Resource.ChakrLogo}"
+                             width="70"/>
+                    </td>
+                    
+                    <td width="45%">
+                    </td>
+                    
+                    <td width="30%"
+                        align="right"
+                        style="font-size:8pt;">
+                        
+                        Tel: +91-124-4084599<br/>
+                        
+                        URL:
+                        <span style="color:blue;text-decoration:underline;">
+                            www.chakr.in
+                        </span>
+                        <br/>
+                        
+                        mail:
+                        <span style="color:blue;text-decoration:underline;">
+                            info@chakr.in
+                        </span>
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+            
+            <br/>
+            
+            <!-- TITLE -->
+            
+            <div class="heading">
+                BUDGETARY QUOTATION
+            </div>
+            
+            <div class="subHeading">
+                Chakr Marjak - Pneumatic-Assisted Sludge Evacuation System for {!quoteRec.Category__c}
+            </div>
+            
+            <br/>
+            
+            <!-- CUSTOMER DETAILS -->
+            
+            <table width="100%" style="table-layout:fixed; font-size:9pt;">
+    <tr>
+        <!-- LEFT SIDE -->
+        <td width="48%" valign="top">
+
+            <table width="100%" >
+                <tr>
+                    <td width="25%">
+                        Category:
+                    </td>
+                    <td width="75%">
+                        {!quoteRec.Category__c}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top">
+                        Submitted To:
+                    </td>
+                    <td style="word-wrap:break-word;">
+                        {!quoteRec.Submitted_To__c}
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                         Delivery: 
+                    </td>
+                    <td style="word-wrap:break-word;">
+                        {!quoteRec.Delivery__c} 
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        Valid for: 
+                    </td>
+                    <td style="word-wrap:break-word;">
+                        {!quoteRec.Valid_for__c}
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+
+        <!-- MIDDLE GAP -->
+        <td width="8%"></td>
+
+        <!-- RIGHT SIDE -->
+        <td width="44%" valign="top">
+
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        Quotation No:
+                    </td>
+                    <td width="70%">
+                        CHK_S_
+                        <apex:outputText value="{0,date,yyyy-MM-dd}">
+                            <apex:param value="{!quoteRec.createdDate}" />
+                        </apex:outputText>_{!quoteRec.QuoteNumber}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Date:
+                    </td>
+                    <td>
+                        <apex:outputText value="{0,date,dd-MMMM-yy}">
+                            <apex:param value="{!quoteRec.createdDate}" />
+                        </apex:outputText>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+            
+            <br/>
+            
+            <!-- COMMERCIAL OFFER -->
+            
+            <div class="sectionHeader">
+                Commercial Offer for 1 device.
+            </div>
+            
+            <table class="grid">
+                
+                <tr >
+                    
+                    <th width="35%" style="font-size:12pt;">
+                        Description
+                    </th>
+                    
+                    <th width="21%" style="font-size:12pt;">
+                        1-Year Plan
+                    </th>
+                    
+                    <th width="22%" style="font-size:12pt;">
+                        2-Year Plan
+                    </th>
+                    
+                    <th width="22%" style="font-size:12pt;">
+                        3-Year Plan
+                    </th>
+                    
+                </tr>
+                
+                <tr >
+                    <td style="font-size:10pt;">Refundable Security Deposit</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Refundable_Security_Deposit__c}" />
+        </apex:outputText></td>
+                    <td style="font-size:10pt;">₹1,90,000.00</td>
+                    <td style="font-size:10pt;">₹1,90,000.00</td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">One-Time Onboarding Charges</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Onboarding_Fee_ex_GST_one_time__c}" />
+        </apex:outputText></td>
+                    <td style="font-size:10pt;">₹56,000.00</td>
+                    <td style="font-size:10pt;">₹56,000.00</td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">Advance Rent (Ex-GST)</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_ex_GST__c}" />
+        </apex:outputText></td>
+                    <td style="font-size:10pt;">₹35,000.00</td>
+                    <td style="font-size:10pt;">₹35,000.00</td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">GST on Onboarding (18%)</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.GST_Amount_1__c}" />
+        </apex:outputText></td>
+                    <td style="font-size:10pt;">₹13,680.00</td>
+                    <td style="font-size:10pt;">₹13,680.00</td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">Initial Payment at Order Confirmation</td>
+                    <td style="font-size:10pt;"><b><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Total_Initial_Commercials_Cost_In_GST__c}" />
+        </apex:outputText></b></td>
+                    <td style="font-size:10pt;"><b>₹2,79,680.00</b></td>
+                    <td style="font-size:10pt;"><b>₹2,79,680.00</b></td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">Monthly Rental (Excl. GST)</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_ex_GST__c}" />
+        </apex:outputText></td>
+                    <td style="font-size:10pt;">₹35,000.00</td>
+                    <td style="font-size:10pt;">₹35,000.00</td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">Monthly Rental (Incl. GST @18%)</td>
+                    <td style="font-size:10pt;"><b><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_incl_GST_18__c}" />
+        </apex:outputText></b></td>
+                    <td style="font-size:10pt;"><b>₹41,300.00</b></td>
+                    <td style="font-size:10pt;"><b>₹41,300.00</b></td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">Minimum Lock-in Period</td>
+                    <td style="font-size:10pt;">{!qliRec.Minimum_Lock_in_Period__c}</td>
+                    <td style="font-size:10pt;">18 Months</td>
+                    <td style="font-size:10pt;">18 Months</td>
+                </tr>
+                
+            </table>
+            
+            <br/>
+            
+            <!-- ADD ONS -->
+            
+            <div class="sectionHeader">
+                Add-On Services (Monthly)
+            </div>
+            
+            <table class="grid">
+                
+                <tr>
+                    <th width="85%">
+                        Services (Ex-GST)
+                    </th>
+                    
+                    <th width="15%">
+                        Amount
+                    </th>
+                </tr>
+                
+                <tr >
+                    <td style="font-size:10pt;">Comprehensive Maintenance</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!quoteRec.Comprehensive_Maintenance__c}" />
+        </apex:outputText></td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">Tracking Application and Backup</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!quoteRec.Digital_Monitoring_App__c}" />
+        </apex:outputText></td>
+                </tr>
+                
+                <tr>
+                    <td style="font-size:10pt;">Dedicated Relationship Manager</td>
+                    <td style="font-size:10pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!quoteRec.Dedicated_Relationship_Mgr__c}" />
+        </apex:outputText></td>
+                </tr>
+                
+            </table>
+            
+            <br/>
+            
+            <!-- SCOPE -->
+            
+            <div class="sectionHeader">
+                Scope of Work
+            </div>
+            
+            <table class="grid">
+                
+                <tr>
+                    
+                    <th width="50%" style="text-align:center;">
+                        Inclusion
+                    </th>
+                    
+                    <th width="50%" style="text-align:center;">
+                        Exclusion
+                    </th>
+                    
+                </tr>
+                
+                <tr>
+                    
+                    <td style="font-size:10pt;">
+                        
+                        
+                        • Engineering, design &amp; manufacturing of Marjak Device<br/>
+                        • Supply with trolley, hoses, and accessories<br/>
+                        • Installation, testing &amp; commissioning at site<br/>
+                        • 2-day on-site operator training<br/>
+                        • Basic Maintenance coverage<br/>
+                        • Remote monitoring dashboard access
+                        
+                    </td>
+                    
+                    <td style="font-size:10pt;">
+                        
+                        • 6 bar compressed air supply at point of use<br/>
+                        
+                        • Site access &amp; coordination for installation<br/>
+                        
+                        • Operate only at designated depot / location<br/>
+                        
+                        • Freight handling / offloading at site<br/>
+                        
+                        • Timely rental payment as per schedule<br/>
+                        
+                        • Consumables (hoses, seals, filters) on misuse<br/>
+                        
+                        • Logistic and transportation from Gurgaon Plant
+                        
+                    </td>
+                    
+                </tr>
+                
+            </table>
+            
+            <br/><br/>
+            
+            <!-- FOOTER -->
+            
+            <table width="100%">
+                
+                <tr>
+                    
+                    <td width="70%" valign="top" style="font-size:10pt;">
+                        
+                        <div>
+                {!quoteOwner.Name}
+            </div>
+
+            <div>
+                {!quoteOwner.Title}
+            </div>
+
+            <div >
+                M: {!quoteOwner.MobilePhone}
+            </div>
+
+            <div>
+                E:
+                <span style="color:blue;text-decoration:underline;">
+                 {!quoteOwner.Email}
+                </span>
+            </div>
+                        
+                    </td>
+                    
+                    <td width="30%" align="center">
+                        
+                        <img src="{!$Resource.ChakrStamp}"
+                             width="135" height="140"/>
+                        
+                    </td>
+                    
+                </tr>
+                
+            </table>
+            
+        </body>
+    </html>
+    
+</apex:page>

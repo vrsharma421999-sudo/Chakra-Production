@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doff_Design_Updated_by__c</fullName>
+    <label>Doff - Design Updated by</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gosavi Someshwar</fullName>
+                <default>false</default>
+                <label>Gosavi Someshwar</label>
+            </value>
+            <value>
+                <fullName>Jayant Bhavsar</fullName>
+                <default>false</default>
+                <label>Jayant Bhavsar</label>
+            </value>
+            <value>
+                <fullName>Gaurang Raut</fullName>
+                <default>false</default>
+                <label>Gaurang Raut</label>
+            </value>
+            <value>
+                <fullName>Harshal Chaudhari</fullName>
+                <default>false</default>
+                <label>Harshal Chaudhari</label>
+            </value>
+            <value>
+                <fullName>Harshal Gopichand Patil</fullName>
+                <default>false</default>
+                <label>Harshal Gopichand Patil</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

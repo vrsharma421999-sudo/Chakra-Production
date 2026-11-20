@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Ayush_s_View</fullName>
+    <columns>NAME</columns>
+    <columns>PO_Number__c</columns>
+    <columns>PO_Line_Item__c</columns>
+    <columns>KVA_Rating__c</columns>
+    <columns>RECD_Sr_No__c</columns>
+    <columns>Design_FG_code__c</columns>
+    <columns>SO_LI__c</columns>
+    <columns>Original_SO_FG_Code__c</columns>
+    <columns>Supply__c</columns>
+    <columns>Installation__c</columns>
+    <columns>Supervision_Cost__c</columns>
+    <columns>Transportation__c</columns>
+    <columns>Delivery_City__c</columns>
+    <columns>Deliver_State__c</columns>
+    <columns>Panel_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>do not delete</value>
+    </filters>
+    <filters>
+        <field>Design_FG_code__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Original_SO_FG_Code__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Project__c.Outsource</value>
+    </filters>
+    <label>Outsource Ayush&apos;s View</label>
+</ListView>

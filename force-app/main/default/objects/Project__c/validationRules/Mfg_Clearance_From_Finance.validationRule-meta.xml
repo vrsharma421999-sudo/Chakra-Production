@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mfg_Clearance_From_Finance</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(Project_Status__c),
+Mfg_Clearance_From_Finance__c!=&quot;Yes&quot;,
+OR(
+
+ISPICKVAL(Project_Status__c, &quot;SM_team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Design_Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;PPC Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;SCM&quot;),
+ISPICKVAL(Project_Status__c, &quot;Production Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Quality Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Finance Pre Dispatch&quot;),
+ISPICKVAL(Project_Status__c, &quot;Project Management Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Invoicing&quot;),
+ISPICKVAL(Project_Status__c, &quot;Dispatch Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Finance Team - Post Delivery&quot;),
+ISPICKVAL(Project_Status__c, &quot;Installation Team&quot;),
+ISPICKVAL(Project_Status__c, &quot;Final Payment&quot;),
+ISPICKVAL(Project_Status__c, &quot;Project Completed&quot;)
+
+)
+)</errorConditionFormula>
+    <errorMessage>Project Status can only be changed when the Mfg Clearance From Finance is &quot;Yes&quot;. Please reach out to the Project Manager and the Finance team</errorMessage>
+</ValidationRule>

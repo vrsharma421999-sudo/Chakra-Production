@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Validation_Site_Mapping_Team</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName &lt;&gt; &apos;Chakr_Marjak&apos;
+&amp;&amp;
+AND(
+    ISPICKVAL(Project_Status__c , &quot;SM_team&quot;),
+    OR(
+        ISBLANK(RECD_Sr_No__c),
+        ISBLANK(Name),
+        ISBLANK(TEXT(Prod__c)),
+								ISBLANK(PO_Verification__c),
+								ISBLANK(PO_Line_Item__c),
+        ISBLANK(Model_Type__c),
+								ISBLANK(PO_Number__c),
+								ISBLANK(KVA_Rating__c),
+								ISBLANK(Deliver_State__c),
+								ISBLANK(Delivery_City__c),
+								ISBLANK(Project_Full_Name__c)
+        
+    )
+)</errorConditionFormula>
+    <errorMessage>Before moving the Project Status to &quot;Site Mapping Team&quot;, please fill in the following required fields: RECD Sr No, Name, Project Full Name ,Product Category, PO Verification, PO Line Item, PO Number ,KVA Rating ,Deliver State, Deliver City and Model Type.</errorMessage>
+</ValidationRule>

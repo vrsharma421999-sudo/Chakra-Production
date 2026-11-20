@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DG_Mandat</fullName>
+    <active>false</active>
+    <errorConditionFormula>(TEXT(PRIORVALUE(Status)) == &apos;Open&apos;||
+TEXT(PRIORVALUE(Status)) == &apos;Assigned&apos;||
+TEXT(PRIORVALUE(Status)) == &apos;Calling&apos;)
+ &amp;&amp; 
+(TEXT(Status) == &apos;Lead Status&apos; ||
+ TEXT(Status) == &apos;Meeting Scheduled&apos;  
+)
+ &amp;&amp; 
+ISBLANK(TEXT(DG__c))</errorConditionFormula>
+    <errorDisplayField>DG__c</errorDisplayField>
+    <errorMessage>Kindly add DG Details</errorMessage>
+</ValidationRule>

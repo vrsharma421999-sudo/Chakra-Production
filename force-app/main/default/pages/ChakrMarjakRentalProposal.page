@@ -1,0 +1,501 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" renderAs="pdf" applyBodyTag="false"
+    standardController="Quote" extensions="ChakrMarjakRentalController">
+    <html>
+
+    <head>
+        <style>
+            @page {
+                size: A4;
+                margin: 15mm;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: Arial, Helvetica, sans-serif; font-size: 9pt; margin: 0; padding: 0;"> <!-- Header -->
+        <table style="width: 100%; background-color: #2e5f8e; color: white; margin-bottom: 10pt;" cellpadding="0"
+            cellspacing="0">
+            <tr>
+                <td style="padding: 15pt; text-align: center;">
+                    <div style="font-size: 15pt; font-weight: bold; margin-bottom: 5pt;">TECHNO-COMMERCIAL PROPOSAL
+                    </div>
+                    <div style="font-size: 12pt; margin-bottom: 3pt;">Chakr Marjak™ — Rental / Subscription Service
+                        Model</div>
+                    <div style="font-size: 8pt; font-style: italic;">Pneumatic-Assisted Sludge Evacuation
+                        System-as-a-Service | Biodigester Toilet — Railways</div>
+                </td>
+            </tr>
+        </table> <!-- Info Bar -->
+        <table style="width: 100%; border-collapse: collapse; background-color: #f5f5f5; margin-bottom: 10pt;"
+            cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="width: 33.33%; border: 1pt solid #cccccc; padding: 8pt; text-align: center; font-size: 8pt;">
+                    <strong>Submitted By</strong><br />Chakr Innovation Pvt. Ltd. </td>
+                <td style="width: 33.33%; border: 1pt solid #cccccc; padding: 8pt; text-align: center; font-size: 8pt;">
+                    <strong>Submitted To</strong><br />{!quoteRec.Account.Name} </td>
+                <td style="width: 33.34%; border: 1pt solid #cccccc; padding: 8pt; text-align: center; font-size: 8pt;">
+                    <strong>Date / Validity</strong><br /><apex:outputText value="{0,date,dd-MMMM-yy}">
+                    <apex:param value="{!quoteRec.createdDate}" />
+                </apex:outputText> | 30 days </td>
+            </tr>
+        </table> <!-- Financial Highlights -->
+        <table style="width: 100%; border: 3pt solid #d9534f; border-collapse: collapse; margin-bottom: 10pt;"
+            cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="width: 25%; padding: 12pt; text-align: center; background:#f3e9c6; border-right: 1pt solid #dddddd;">
+                    <div style="font-size: 12pt; font-weight: bold; color: #2e5f8e;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_ex_GST__c}" />
+        </apex:outputText></div>
+                    <div style="font-size: 7pt; color: #666666;">Monthly Rental (ex-GST)</div>
+                </td>
+                <td style="width: 25%; padding: 12pt; text-align: center; background:#f3e9c6; border-right: 1pt solid #dddddd;">
+                    <div style="font-size: 12pt; font-weight: bold; color: #2e5f8e;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Refundable_Security_Deposit__c}" />
+        </apex:outputText></div>
+                    <div style="font-size: 7pt; color: #666666;">Refundable Deposit</div>
+                </td>
+                <td style="width: 25%; padding: 12pt; text-align: center; background:#f3e9c6; border-right: 1pt solid #dddddd;">
+                    <div style="font-size: 12pt; font-weight: bold; color: #2e5f8e;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Total_Initial_Commercials_Cost_In_GST__c}" />
+        </apex:outputText></div>
+                    <div style="font-size: 7pt; color: #666666;">Initial Customer Outflow</div>
+                </td>
+                <td style="width: 25%; padding: 12pt; text-align: center; background:#c9e3c8;">
+                    <div style="font-size: 12pt; font-weight: bold; color: #2e5f8e;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Upfront_Saving_vs_Purchase__c}" />
+        </apex:outputText></div>
+                    <div style="font-size: 7pt; color: #666666;">Upfront Saving vs Purchase</div>
+                </td>
+            </tr>
+        </table> <!-- About -->
+        <div style="font-size: 8pt; margin-bottom: 10pt; text-align: justify;"> <strong>About:</strong> Chakr Innovation
+            is India's leading cleantech company, founded in 2016 by IIT Delhi graduates and ICAT/CPCB certified. We are
+            pleased to submit this techno-commercial proposal for the Chakr Marjak™ pneumatic-assisted sludge evacuation
+            system under a Rental / Subscription model (Evacuation-as-a-Service) for biodigester toilet first-chamber
+            evacuation on Railways. </div> <!-- Customer Pitch -->
+        <div
+            style="background-color: #fff3cd; border-left: 3pt solid #ffc107; padding: 8pt; margin-bottom: 10pt; font-size: 8pt;">
+            <strong>Customer Pitch:</strong> Instead of paying ₹10.75 lakh upfront, start using the machine at roughly
+            {!customerPitchAmount} initial outflow, followed by manageable monthly rental. Chakr retains ownership and provides
+            remote monitoring with the ability to lock the machine on non-payment, tampering, or unauthorized movement.
+        </div> <!-- Product Snapshot -->
+        <div
+            style="font-size: 9pt; font-weight: bold; color: #2e5f8e; margin-top: 12pt; margin-bottom: 6pt; padding-bottom: 2pt; border-bottom: 2pt solid #2e5f8e;">
+            Product Snapshot — Chakr Marjak™ </div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 10pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <th
+                    style="width: 25%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Equipment</th>
+                <th
+                    style="width: 25%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Operation</th>
+                <th
+                    style="width: 25%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Tank Capacity</th>
+                <th
+                    style="width: 25%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Performance</th>
+            </tr>
+            <tr>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Chakr Marjak™ Pneumatic-Assisted
+                    Evacuation System</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Extract–Separate–Recirculate (ESR)
+                    Closed-Loop, Venturi vacuum @ 6 bar</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">145 L (90L solids / 55L liquid), SS
+                    304</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">≥90% of 70L first chamber in ≤60
+                    sec; Cycle 5 min; IP55</td>
+            </tr>
+        </table> <!-- Rental Plan Header -->
+        <table style="width: 100%; background-color: #2e5f8e; color: white; margin-top: 12pt; margin-bottom: 8pt;"
+            cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding: 8pt; text-align: center; font-size: 9pt; font-weight: bold;"> RENTAL PLAN —
+                    EVACUATION-AS-A-SERVICE (EaaS) </td>
+            </tr>
+        </table>
+        <div style="font-size: 9pt; font-weight: bold; margin-bottom: 4pt;">Plan Options</div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 10pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <th
+                    style="width: 20%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Plan</th>
+                <th
+                    style="width: 13%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Monthly Rental<br />(ex-GST)</th>
+                <th
+                    style="width: 13%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Lock-in</th>
+                <th
+                    style="width: 18%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Refundable<br />Deposit</th>
+                <th
+                    style="width: 18%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Onboarding<br />Charge</th>
+                <th
+                    style="width: 18%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Initial<br />Outflow</th>
+            </tr>
+            <tr style="background-color: #fff9e6;">
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; font-weight: bold;"> Standard Rental
+                    Plan<br /><span style="color: #d9534f; font-size: 9pt;">★</span> <span
+                        style="color: #d9534f; font-size: 6pt; font-weight: bold;">RECOMMENDED</span> </td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_ex_GST__c}" />
+        </apex:outputText></td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;">{!qliRec.Minimum_Lock_in_Period__c}</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Refundable_Security_Deposit__c}" />
+        </apex:outputText></td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Onboarding_Fee_ex_GST_one_time__c}" />
+        </apex:outputText></td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Total_Initial_Commercials_Cost_In_GST__c}" />
+        </apex:outputText></td>
+            </tr>
+            <apex:outputPanel layout="none" rendered="{!OR(NOT(ISNULL(qliRec.Strategic_Monthly_Rental_ex_GST__c)),NOT(ISBLANK(qliRec.Strategic_Lock_in_Period__c)))}">
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; font-weight: bold;">Strategic /
+                    Pilot Plan</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Strategic_Monthly_Rental_ex_GST__c}" />
+        </apex:outputText></td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;">{!qliRec.Strategic_Lock_in_Period__c}</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Refundable_Security_Deposit__c}" />
+        </apex:outputText></td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Onboarding_Fee_ex_GST_one_time__c}" />
+        </apex:outputText></td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Strategic_Initial_Outflow__c}" />
+        </apex:outputText></td>
+            </tr>
+                </apex:outputPanel>
+        </table>
+        <div style="font-size: 7pt; color: #666666; font-style: italic; margin-bottom: 10pt;">
+            <strong>Inclusions:</strong> Operator Training • Preventive Maintenance (4 visits/yr) • Corrective
+            Maintenance (covered failures) • Remote operational control • IoT/GPS asset monitoring • Buyout option post
+            lock-in </div> <!-- Commercial Terms -->
+        <div
+            style="font-size: 9pt; font-weight: bold; color: #2e5f8e; margin-top: 12pt; margin-bottom: 6pt; padding-bottom: 2pt; border-bottom: 2pt solid #2e5f8e;">
+            Recommended: Standard Rental Plan — Commercial Terms </div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 10pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td
+                    style="width: 35%; padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Monthly Rental (ex-GST)</td>
+                <td style="width: 15%; padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: center;">
+                    <apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_ex_GST__c}" />
+        </apex:outputText></td>
+                <td
+                    style="width: 35%; padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Monthly Rental (incl. GST @ 18%)</td>
+                <td style="width: 15%; padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: right;">
+                   <apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_incl_GST_18__c}" />
+        </apex:outputText></td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Onboarding Fee (ex-GST, one-time)</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: center;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Onboarding_Fee_ex_GST_one_time__c}" />
+        </apex:outputText></td>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Refundable Security Deposit</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: right;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Refundable_Security_Deposit__c}" />
+        </apex:outputText></td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Minimum Lock-in Period</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: center;">{!qliRec.Minimum_Lock_in_Period__c}</td>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Initial Customer Outflow</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: right;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Total_Initial_Commercials_Cost_In_GST__c}" />
+        </apex:outputText></td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Maintenance</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: center;">{!qliRec.Maintenance__c}</td>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Buyout Option (post lock-in)</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: right;">{!qliRec.Buyout_Option_post_lock_in__c}</td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Late Payment Charge</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: center;">{!qliRec.Late_Payment_Charge__c}
+                </td>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Reactivation Charge (post lock)</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: right;">{!qliRec.Reactivation_Charge_post_lock__c}
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Consumables</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: center;">{!qliRec.Consumables__c}
+                </td>
+                <td
+                    style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; background-color: #e8f0f7; font-weight: bold;">
+                    Freight</td>
+                <td style="padding: 6pt; border: 1pt solid #dddddd; font-size: 8pt; text-align: right;">{!qliRec.Freight__c}</td>
+            </tr>
+        </table> <!-- Add-on Services -->
+        <table style="width: 100%; border: 2pt solid #d9534f; border-collapse: collapse; margin-bottom: 10pt;"
+            cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="3"
+                    style="padding: 8pt; text-align: center; font-size: 9pt; font-weight: bold; color: #2e5f8e;">
+                    Optional Add-On Services (Monthly) </td>
+            </tr>
+            <tr style="background-color:#f2f2f2;">
+                <td
+                    style="width: 33.33%; padding: 6pt; text-align: center; font-size: 8pt; border-right: 1pt solid #dddddd;">
+                    <div style="font-weight: bold;">Comprehensive Maintenance</div>
+                    <div style="color: #666666;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!quoteRec.Comprehensive_Maintenance__c}" />
+        </apex:outputText></div>
+                </td>
+                <td
+                    style="width: 33.33%; padding: 6pt; text-align: center; font-size: 8pt; border-right: 1pt solid #dddddd;">
+                    <div style="font-weight: bold;">Digital Monitoring App</div>
+                    <div style="color: #666666;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!quoteRec.Digital_Monitoring_App__c}" />
+        </apex:outputText></div>
+                </td>
+                <td style="width: 33.34%; padding: 6pt; text-align: center; font-size: 8pt;">
+                    <div style="font-weight: bold;">Dedicated Relationship Mgr</div>
+                    <div style="color: #666666;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!quoteRec.Dedicated_Relationship_Mgr__c}" />
+        </apex:outputText></div>
+                </td>
+            </tr>
+        </table> <!-- Payment Schedule -->
+        <div
+            style="font-size: 9pt; font-weight: bold; color: #2e5f8e; margin-top: 12pt; margin-bottom: 6pt; padding-bottom: 2pt; border-bottom: 2pt solid #2e5f8e;">
+            Payment Schedule &amp; Delivery </div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 10pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <th
+                    style="width: 25%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Milestone</th>
+                <th
+                    style="width: 50%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Event</th>
+                <th
+                    style="width: 25%; background-color: #2e5f8e; color: white; padding: 6pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Amount (incl. GST)</th>
+            </tr>
+            <tr>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">1st Payment</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Security Deposit + Onboarding Fee
+                    at order confirmation</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!strvalue}" />
+        </apex:outputText></td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Monthly (Advance)</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Rental payable in advance each
+                    month</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;"><apex:outputText value="{0, number, ###,###,##0.00}">
+            <apex:param value="{!qliRec.Monthly_Rental_incl_GST_18__c}" />
+        </apex:outputText>/ month</td>
+            </tr>
+            <tr>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Supply</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">From receipt of advance payment
+                </td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">4 weeks</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Installation</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Commissioning &amp; operator
+                    training</td>
+                <td style="padding: 6pt; border: 1pt solid #cccccc; font-size: 8pt;">Within 1 week of delivery</td>
+            </tr>
+        </table>
+        <!-- Page Break
+
+        <div style="page-break-after: always;"></div> 
+        PAGE 2 --> <!-- Why Rental Model Wins -->
+        <div
+            style="font-size: 9pt; font-weight: bold; color: #2e5f8e; margin-top: 0pt; margin-bottom: 3pt; padding-bottom: 2pt; border-bottom: 2pt solid #2e5f8e;">
+            Why the Rental Model Wins </div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 4pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="width: 50%; padding: 5pt; border: 1pt solid #dddddd;">
+                    <div style="font-weight: bold; font-size: 9pt; margin-bottom: 2pt;"><span
+                            style="color: #28a745; font-weight: bold;">✓</span> Zero Capital Outlay</div>
+                    <div style="font-size: 8pt; color: #555555;">Avoid ₹10.75 L upfront; save ₹8.36 L vs purchase.</div>
+                </td>
+                <td style="width: 50%; padding: 5pt; border: 1pt solid #dddddd;">
+                    <div style="font-weight: bold; font-size: 9pt; margin-bottom: 2pt;"><span
+                            style="color: #28a745; font-weight: bold;">✓</span> Maintenance Included</div>
+                    <div style="font-size: 8pt; color: #555555;">4 preventive visits/yr + corrective coverage.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5pt; border: 1pt solid #dddddd;">
+                    <div style="font-weight: bold; font-size: 9pt; margin-bottom: 2pt;"><span
+                            style="color: #28a745; font-weight: bold;">✓</span> Asset Monitored by Chakr</div>
+                    <div style="font-size: 8pt; color: #555555;">IoT + GPS + remote lock for non-payment/tampering.
+                    </div>
+                </td>
+                <td style="padding: 5pt; border: 1pt solid #dddddd;">
+                    <div style="font-weight: bold; font-size: 9pt; margin-bottom: 2pt;"><span
+                            style="color: #28a745; font-weight: bold;">✓</span> Buyout Flexibility</div>
+                    <div style="font-size: 8pt; color: #555555;">Option to purchase post lock-in at residual value.
+                    </div>
+                </td>
+            </tr>
+        </table> <!-- Scope of Work -->
+        <div
+            style="font-size: 9pt; font-weight: bold; color: #2e5f8e; margin-top: 6pt; margin-bottom: 3pt; padding-bottom: 2pt; border-bottom: 2pt solid #2e5f8e;">
+            Scope of Work </div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 4pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <th
+                    style="width: 50%; background-color: #2e5f8e; color: white; padding: 4pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Chakr Innovation's Scope</th>
+                <th
+                    style="width: 50%; background-color: #2e5f8e; color: white; padding: 4pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Client's Scope</th>
+            </tr>
+            <tr>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;"> • Engineering, design &amp;
+                    manufacturing of Chakr Marjak™<br /> • Supply with trolley, hoses, and accessories<br /> •
+                    Installation, testing &amp; commissioning at site<br /> • 1-day on-site operator training<br /> •
+                    Comprehensive maintenance coverage<br /> • Remote monitoring dashboard access </td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;"> • 6 bar compressed air supply at
+                    point of use<br /> • Site access &amp; coordination for installation<br /> • Operate only at
+                    designated depot / location<br /> • Freight handling / offloading at site<br /> • Timely rental
+                    payment as per schedule<br /> • Consumables (hoses, seals, filters) on misuse </td>
+            </tr>
+        </table> <!-- Key Contract Clauses -->
+        <div
+            style="font-size: 9pt; font-weight: bold; color: #2e5f8e; margin-top: 6pt; margin-bottom: 3pt; padding-bottom: 2pt; border-bottom: 2pt solid #2e5f8e;">
+            Key Contract Clauses (Service / Rental Agreement) </div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 4pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <th
+                    style="width: 20%; background-color: #2e5f8e; color: white; padding: 4pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Clause</th>
+                <th
+                    style="width: 45%; background-color: #2e5f8e; color: white; padding: 4pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    What It Covers</th>
+                <th
+                    style="width: 35%; background-color: #2e5f8e; color: white; padding: 4pt; font-size: 8pt; border: 1pt solid #2e5f8e; text-align: center;">
+                    Commercial Protection</th>
+            </tr>
+            <tr>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Ownership</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Machine remains property of Chakr
+                    Innovation</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Asset can be recovered</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Advance Payment</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Monthly rental payable in advance
+                </td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Reduces default exposure</td>
+            </tr>
+            <tr>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Remote Disable</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Lock for non-payment, tampering,
+                    misuse, unauthorized movement</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Protects asset</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Security Deposit</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Adjustable against dues / damage /
+                    missing parts</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Covers losses; limits downside</td>
+            </tr>
+            <tr>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Buyout Option</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Allowed after lock-in at agreed
+                    residual value</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Extra monetization path</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Tampering Penalty</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Unauthorized opening or
+                    modification is billable</td>
+                <td style="padding: 4pt; border: 1pt solid #cccccc; font-size: 8pt;">Protects warranty &amp; margin</td>
+            </tr>
+        </table> <!-- Asset Security & Remote Control -->
+        <div
+            style="font-size: 9pt; font-weight: bold; color: #2e5f8e; margin-top: 6pt; margin-bottom: 3pt; padding-bottom: 2pt; border-bottom: 2pt solid #2e5f8e;">
+            Asset Security &amp; Remote Control </div>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 4pt;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td
+                    style="width: 33.33%; padding: 5pt; border: 1pt solid #dddddd; text-align: center; background-color: #f9f9f9;">
+                    <div style="font-weight: bold; color: #2e5f8e; font-size: 8pt; margin-bottom: 2pt;">IoT Control
+                        Module</div>
+                    <div style="font-size: 7pt; color: #555555;">Remote monitoring &amp; lock/unlock; always-active
+                        dashboard data</div>
+                </td>
+                <td
+                    style="width: 33.33%; padding: 5pt; border: 1pt solid #dddddd; text-align: center; background-color: #f9f9f9;">
+                    <div style="font-weight: bold; color: #2e5f8e; font-size: 8pt; margin-bottom: 2pt;">GPS Tracking
+                    </div>
+                    <div style="font-size: 7pt; color: #555555;">Live / periodic ping for machine location &amp; alerts
+                    </div>
+                </td>
+                <td
+                    style="width: 33.34%; padding: 5pt; border: 1pt solid #dddddd; text-align: center; background-color: #f9f9f9;">
+                    <div style="font-weight: bold; color: #2e5f8e; font-size: 8pt; margin-bottom: 2pt;">Geo-fencing
+                    </div>
+                    <div style="font-size: 7pt; color: #555555;">Approved site boundary; usage restriction on breach
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5pt; border: 1pt solid #dddddd; text-align: center; background-color: #f9f9f9;">
+                    <div style="font-weight: bold; color: #2e5f8e; font-size: 8pt; margin-bottom: 2pt;">Tamper Sensor
+                    </div>
+                    <div style="font-size: 7pt; color: #555555;">Detects panel / internal opening; safe lock on tamper
+                    </div>
+                </td>
+                <td style="padding: 5pt; border: 1pt solid #dddddd; text-align: center; background-color: #f9f9f9;">
+                    <div style="font-weight: bold; color: #2e5f8e; font-size: 8pt; margin-bottom: 2pt;">Runtime Meter
+                    </div>
+                    <div style="font-size: 7pt; color: #555555;">Tracks usage hours; full operations log</div>
+                </td>
+                <td style="padding: 5pt; border: 1pt solid #dddddd; text-align: center; background-color: #f9f9f9;">
+                    <div style="font-weight: bold; color: #2e5f8e; font-size: 8pt; margin-bottom: 2pt;">Battery Backup
+                        (IoT)</div>
+                    <div style="font-size: 7pt; color: #555555;">Power-cut alert triggered even during outage</div>
+                </td>
+            </tr>
+        </table> <!-- Footer -->
+        <div
+            style="margin-top: 7pt; padding-top: 6pt; border-top: 2pt solid #2e5f8e; text-align: center; font-size: 8pt;">
+            <div style="margin-bottom: 2pt;"> <strong>Offer Validity:</strong> 30 days from date of submission |
+                <strong>Contact:</strong> Anil Pal, Head Chakr Marjak | anil.pal@chakr.in | +91 8796105044 </div>
+            <div style="margin-top: 2pt; font-style: italic; color: #666666;"> <strong>Chakr Innovation Pvt.
+                    Ltd.</strong> | www.chakr.in | <em>Materializing a Cleaner Reality</em> </div>
+        </div>
+    </body>
+
+    </html>
+</apex:page>
